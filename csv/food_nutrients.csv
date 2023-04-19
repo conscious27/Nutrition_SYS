@@ -1,0 +1,101 @@
+,group,calories,total_fat (g),saturated_fat (g),cholesterol (mg),protein (g),carbohydrate (g),fiber (g),sugars (g),category1,category2
+Veg Biryani,Staple,464,12.5,1.6,0,9.5,80.6,7.2,9.5,Vegetarian,NA
+Pulao,Staple,368,8.8,1,0,6.5,66.6,3.5,4.5,Vegetarian,NA
+Jeera Rice,Staple,353,7.9,1,0,6.4,64.6,1.4,2.2,Vegetarian,NA
+Sabudana Khichdi,Staple,447,23.9,3.3,0,6.9,53.2,5.5,4.4,Vegetarian,NA
+Lemon Rice,Staple,439,20.7,2.8,0,8.2,56.7,3.7,1.8,Vegetarian,NA
+Khichdi,Staple,283,7.2,3.8,15,12.6,41.7,9.6,1.8,Vegetarian,NA
+Butter Naan,Bread,343,16.7,10.1,42,7.4,40.4,1.5,1.9,Vegetarian,Milk
+Aloo Paratha,Bread,215,6.8,4,16,5.7,33.5,4.9,1.7,Vegetarian,NA
+Sattu Paratha,Bread,302,7.2,1.9,5,12.6,49.2,9.3,4.4,Vegetarian,NA
+Kulcha,Bread,258,7.5,2.1,8,7.2,40.8,1.2,3.9,Vegetarian,NA
+Puri,Bread,153,6.5,0.7,0,3.2,20.6,2.8,0.2,Vegetarian,NA
+Plain Dosa,Bread,133,0.6,0.1,0,3.6,28.4,2.2,0.1,Vegetarian,NA
+Masala Dosa,Bread,200,4.7,0.6,0,4.4,35.8,3.3,1.1,Vegetarian,NA
+Roti,Bread,104,2,0.2,0,3.4,19.3,3.2,0.1,Vegetarian,NA
+Paratha,Bread,194,7.8,1.3,0,5,26,4,0.3,Vegetarian,NA
+Laccha Paratha,Bread,210,9.2,1.5,0,5,27,4,0.3,Vegetarian,NA
+Bhakri,Bread,160,3,0.4,0,5,30,5,0.4,Vegetarian,NA
+Bhatura,Bread,325,16,1.5,0,6,39,1,2,Vegetarian,NA
+Kachori,Snack,230,12,1.5,0,5,26,2,1,Vegetarian,NA
+Aloo Tikki,Snack,140,6,1,0,2,20,2,2,Vegetarian,NA
+Dhokla,Snack,130,6,1,2,6,16,3,2,Vegetarian,Milk
+Uttapam,Snack,160,6,1,0,5,22,3,3,Vegetarian,NA
+Baati,Snack,270,16,9,35,4,29,4,0,Vegetarian,NA
+Medu Vada,Snack,70,2,0,0,5,9,3,0,Vegetarian,NA
+Misal Pav,Snack,330,8,2,0,12,52,10,5,Vegetarian,NA
+Bhelpuri,Snack,215,8,1,0,6,32,5,6,Vegetarian,NA
+Bonda,Snack,120,4,0,0,4,18,3,2,Vegetarian,NA
+Pav Bhaji,Snack,400,16,6,22,11,56,9,11,Vegetarian,MIlk
+Pakora,Snack,200,10,1,0,5,22,4,4,Vegetarian,NA
+Upma,Snack,300,10,1,0,7,48,5,7,Vegetarian,NA
+Vada Pao,Snack,350,18,2,0,8,42,4,3,Vegetarian,NA
+Samosa,Snack,189,10,1,0,3,21,2,1,Vegetarian,NA
+Idli,Snack,61,0,0,0,2,12,1,0,Vegetarian,NA
+Poha,Snack,155,6,1,0,4,22,3,2,Vegetarian,NA
+Veg Sandwhich,Snack,150,5,2,8,4,24,4,4,Vegetarian,NA
+Aloo Gobi,Dish,160,8,1,0,3,21,4,3,Vegetarian,NA
+Veg Jhalfrezi,Dish,115,5,1,0,5,15,5,6,Vegetarian,NA
+Bhindi Bhaji,Dish,92,6.5,0.6,0,2.5,8,3,2.5,Vegetarian,NA
+Rajma ,Dish,251,9.6,0.7,0,9.6,34.5,10.2,4.5,Vegetarian,NA
+Dal Tadka,Dish,220,8,1,0,10,30,8,2,Vegetarian,NA
+Dal Makhani,Dish,330,14,7,34,13,39,12,5,Vegetarian,Milk
+Sambar,Dish,165,2.9,0.4,0,9.7,27.8,6.3,3.9,Vegetarian,NA
+Chana Masala,Dish,200,6,0.5,0,8,30,9,6,Vegetarian,NA
+Chhola,Dish,270,11,2,5,10,35,9,6,Vegetarian,NA
+Palak with Potato,Dish,180,8,1,0,4,25,4,2,Vegetarian,NA
+Lauki Tamatar,Dish,104,6,1,0,2,11,2,4,Vegetarian,NA
+Bhindi Masala,Dish,205,12,1,0,5,22,7,7,Vegetarian,NA
+Jeera Aloo,Dish,178,9.8,0.8,0,2.7,20.3,3.2,1.2,Vegetarian,NA
+Aloo Matar,Dish,196,8,1,0,5,27,5,4,Vegetarian,NA
+Aloo Dam,Dish,190,8,1,1,5,26,4,5,Vegetarian,NA
+Kolkata Chicken Biryani,Staple,482,22,7,83,25,47,2,3,White Meat,NA
+Hyderabadi Chicken Biryani,Staple,557,21.7,10.1,88,25.3,64.8,2.2,2.8,White Meat,NA
+Chicken Dum Biryani,Staple,683,25.6,5.7,90,26,66.5,2.5,3,White Meat,NA
+Mutton Biryani,Staple,536,27,8,77,25,48,2,2,Red Meat,NA
+Rogan Josh,Dish,480,36,13,121,30,6,2,2,Red Meat,NA
+Chicken Masala,Dish,280,15,3.5,85,28,7,2,3,White Meat,NA
+Tandoori Chicken,Dish,290,17,4,115,31,4,1,2,White Meat,NA
+Chicken Butte Masala,Dish,360,22,11,122,28,11,3,5,White Meat,Milk
+Tangdi Kebab,Dish,250,15,3,90,23,4,1,2,White Meat,NA
+Chicken Korma,Dish,368,23.5,8.7,122,26.8,10.5,1.8,4.6,White Meat,NA
+Chicken Tikka Masala,Dish,292,16,6,104,27,9,2,4,White Meat,NA
+Chicken Curry,Dish,321,17,4,99,31,10,2,5,White Meat,NA
+Kadhai Chicken,Dish,290,14,2,76,28,13,3,6,White Meat,NA
+Murg Musallam,Dish,378,18,7,141,47,7,1,4,White Meat,NA
+Chicken Lollipop,Snack,189,11,2,84,18,3,1,0,White Meat,NA
+Chilli Chicken,Snack,250,12,2,100,25,10,1,5,White Meat,NA
+Chicken 65,Snack,358,9.9,2.2,162,49,14,0.6,0.2,White Meat,NA
+Chicken Snadwhich,Snack,330,13,4,60,30,22,2,3,White Meat,NA
+Lemon Chicken,Snack,375,21,5,132,31,16,1,4,White Meat,NA
+Chicken Soup,Snack,160,3,1,70,26,6,1,2,White Meat,NA
+Curd Rice,Staple,163,4,2,11,6,26,1,3,Milk,Vegetarian
+Kudhi,DIsh,219,10,1,5,12,21,4,6,Milk,Vegetarian
+Kadhai Paneer,Dish,240,18,7,35,8,12,3,6,Milk,Vegetarian
+Matar Paneer,Dish,284,21.7,8.8,33,9.9,15.7,4.7,7.5,Milk,Vegetarian
+Malai Kofta,DIsh,280,16,7,38,11,24,4,4,Milk,Vegetarian
+Sahi Paneer,Dish,290,24,14,65,9,10,2,5,Milk,Vegetarian
+Palak Paneer,Dish,250,15,8,35,15,12,4,4,Milk,Vegetarian
+Paneer Bhurji,DIsh,267,22,10,45,10,7,2,3,Milk,Vegetarian
+Paneer Kofta,Dish,280,18,10,50,7,22,2,4,Milk,Vegetarian
+Paneer Butter Masala,Dish,284,23,12,60,9,11,2,5,Milk,Vegetarian
+Fish Curry,Dish,250,15,4,60,25,5,2,2,Fish,NA
+Lemon Pepper Fish,Dish,196,9.4,1.4,45,23.6,4.2,0.4,0.2,Fish,NA
+Prawn Curry,Dish,190,8,1,210,25,7,2,3,Fish,NA
+Fish Tikka Masala,Dish,316,21,9,92,20,10,2,5,Fish,NA
+Fish Fry,Snack,300,10,2,50,25,25,2,2,Fish,NA
+Hyderbadi Egg Dum Biryani,Staple,562,18,5,268,22,80,6,9,Egg,NA
+Egg Pulao,Staple,345,14,3,163,11,45,2,2,Egg,NA
+Egg Fried Rice,Staple,380,14,2.5,120,13,52,3,3,Egg,NA
+Egg Curry,Dish,200,15,3.5,375,12,7,1,3,Egg,NA
+Egg Masala,Dish,245,19,4,327,12,6,1,3,Egg,NA
+Egg Bhurji,Dish,177,14,3.6,327,10,3,0.6,1,Egg,NA
+Egg Toast,Snack,290,13,5,380,17,22,1,4,Egg,NA
+Omlette,Snack,220,18,7,385,13,1,0,1,Egg,NA
+Egg Paratha,Snack,224,11.2,2.6,139,9.5,21.6,2.4,1.2,Egg,NA
+French Toast,Snack,244,11,5,203,11,25,1,7,Egg,NA
+Aam Chutney,Side Dish,74,0.4,0.1,0,0.8,19,1.1,17.8,Vegetarian,NA
+Coconut Chutney,Side Dish,80,7,6,0,1,4,2,1,Vegetarian,NA
+Rasam,Side Dish,96,3,2,8,4,14,3,2,Vegetarian,NA
+Raita,Side Dish,120,4,2.5,15,9,12,1,11,Milk,Vegetarian
+Kachumber,Side Dish,30,0.3,0,0,1.4,6.5,1.6,0,Vegetarian,NA
