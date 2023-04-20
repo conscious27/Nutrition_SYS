@@ -6,6 +6,9 @@
 <body>
   {% if user.is_authenticated %}
     <p>Welcome, {{ user.username }}!</p>
+
+    <a href="create_user_profile">create_user_profile</a>
+
     <a href="logout_views">Logout</a>
   {% else %}
     <a href="login_views">Login</a> 
@@ -13,8 +16,6 @@
   {% endif %}
   
   {% block content %}
-
-  <a href="create_user_profile">create_user_profile</a>
   {% endblock %}
 </body>
 </html>
