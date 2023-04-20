@@ -39,16 +39,12 @@ class User(AbstractBaseUser):
 class Profile(models.Model):
     user  = models.OneToOneField(User, on_delete=models.CASCADE)
     age = models.IntegerField(null=True, blank=True)
-    weight = models.FloatField()
-    height = models.FloatField()
-    DIABETES_CHOICES = (
-        ('Type 1', 'Type 1'),
-        ('Type 2', 'Type 2')
-    )
-    diabetes = models.CharField(max_length=6, choices=DIABETES_CHOICES, null=True, blank=True)
-    blood_glucose_level = models.DecimalField(max_digits=6, decimal_places=2)
+    height = models.DecimalField(max_digits=3, decimal_places=2)
+    weight = models.DecimalField(max_digits=3, decimal_places=2)
+    cholesterol_level = models.DecimalField(max_digits=6, decimal_places=2)
+    glucose_level = models.DecimalField(max_digits=6, decimal_places=2)
     blood_pressure = models.DecimalField(max_digits=6, decimal_places=2)
-    physical_activity_daily = models.DecimalField(max_digits=6, decimal_places=2)
+    physical_activity = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=210)
     RESTRICTIONS = (
         ('Egg', 'Egg'),
         ('Red Meat', 'Red Meat'), 
