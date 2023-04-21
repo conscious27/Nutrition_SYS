@@ -7,6 +7,14 @@ class UserProfileForm(forms.ModelForm):
         model = Profile
         fields = ['age', 'height', 'weight', 'cholesterol_level', 'glucose_level', 'blood_pressure', 'physical_activity', 'dietary_restriction']
 
+    def save(self, commit=True, user=None):
+        instance = super().save(commit=False)
+        if user:
+            instance.user = user
+        if commit:
+            instance.save()
+        return instance
+
 class SignUpForm(UserCreationForm):
     first_name = forms.CharField(max_length=30, required=True, help_text='Required.')
     last_name = forms.CharField(max_length=30, required=True, help_text='Required.')
