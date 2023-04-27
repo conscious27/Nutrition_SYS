@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recommended Meals</title>
+</head>
+<body>
+	<h1>Recommended Meals</h1>
+	{% if recommended_meals %}
+		{% for meal in recommended_meals %}
+			<h2>Day {{ forloop.counter }}</h2>
+      <h3> Breakfast </h3>
+			<ul>
+					<li>{{ meal.0 }}</li>
+          <l1>{{ meal.1 }}</l1>
+          <l1>{{ meal.2 }}</l1>
+			</ul>
+      <h3> Lunch </h3>
+			<ul>
+					<li>{{ meal.3 }}</li>
+          <l1>{{ meal.4 }}</l1>
+          <l1>{{ meal.5 }}</l1>
+			</ul>
+      <h3> Dinner </h3>
+			<ul>
+					<li>{{ meal.6 }}</li>
+          <l1>{{ meal.7 }}</l1>
+          <l1>{{ meal.8 }}</l1>
+			</ul>
+		{% endfor %}
+	{% else %}
+		<p>No meals found within specified parameters.</p>
+	{% endif %}
+</body>
+</html>

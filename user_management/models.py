@@ -43,7 +43,14 @@ class Profile(models.Model):
     cholesterol_level = models.DecimalField(max_digits=6, decimal_places=2)
     glucose_level = models.DecimalField(max_digits=6, decimal_places=2)
     blood_pressure = models.DecimalField(max_digits=6, decimal_places=2)
-    physical_activity = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=210)
+    PHYSICAL_ACTIVITY_CHOICES = (
+        (1.4, 'sedentary_lifestyle'),
+        (1.6, 'low_active_lifestyle'),
+        (1.8, 'moderate_lifestyle'),
+        (2.0, 'active_lifestyle'),
+        (2.2, 'very_active_lifestyle')
+    )
+    physical_activity = models.DecimalField(max_digits=6,decimal_places=1, choices=PHYSICAL_ACTIVITY_CHOICES)
     RESTRICTIONS = (
         ('Egg', 'Egg'),
         ('Red Meat', 'Red Meat'), 

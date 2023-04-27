@@ -1,4 +1,4 @@
-,group,calories,total_fat (g),saturated_fat (g),cholesterol (mg),protein (g),carbohydrate (g),fiber (g),sugars (g),category1,category2
+name,group,calories,total_fat,saturated_fat,cholesterol,protein,carbohydrate,fiber,sugars,category1,category2
 Veg Biryani,Staple,464,12.5,1.6,0,9.5,80.6,7.2,9.5,Vegetarian,NA
 Pulao,Staple,368,8.8,1,0,6.5,66.6,3.5,4.5,Vegetarian,NA
 Jeera Rice,Staple,353,7.9,1,0,6.4,64.6,1.4,2.2,Vegetarian,NA

@@ -1,0 +1,645 @@
+food1,food2,food3,calories,total_fat,cholesterol,protein,carbohydrates,fiber,sugars
+Veg Biryani,Aloo Gobi,,624.00,20.50,0.00,12.50,101.60,11.20,12.50
+Veg Biryani,Veg Jhalfrezi,,579.00,17.50,0.00,14.50,95.60,12.20,15.50
+Veg Biryani,Bhindi Bhaji,,556.00,19.00,0.00,12.00,88.60,10.20,12.00
+Veg Biryani,Rajma ,,715.00,22.10,0.00,19.10,115.10,17.40,14.00
+Veg Biryani,Dal Tadka,,684.00,20.50,0.00,19.50,110.60,15.20,11.50
+Veg Biryani,Dal Makhani,,794.00,26.50,34.00,22.50,119.60,19.20,14.50
+Veg Biryani,Sambar,,629.00,15.40,0.00,19.20,108.40,13.50,13.40
+Veg Biryani,Chana Masala,,664.00,18.50,0.00,17.50,110.60,16.20,15.50
+Veg Biryani,Chhola,,734.00,23.50,5.00,19.50,115.60,16.20,15.50
+Veg Biryani,Palak with Potato,,644.00,20.50,0.00,13.50,105.60,11.20,11.50
+Veg Biryani,Lauki Tamatar,,568.00,18.50,0.00,11.50,91.60,9.20,13.50
+Veg Biryani,Bhindi Masala,,669.00,24.50,0.00,14.50,102.60,14.20,16.50
+Veg Biryani,Jeera Aloo,,642.00,22.30,0.00,12.20,100.90,10.40,10.70
+Veg Biryani,Aloo Matar,,660.00,20.50,0.00,14.50,107.60,12.20,13.50
+Veg Biryani,Aloo Dam,,654.00,20.50,1.00,14.50,106.60,11.20,14.50
+Veg Biryani,Rogan Josh,,944.00,48.50,121.00,39.50,86.60,9.20,11.50
+Veg Biryani,Chicken Masala,,744.00,27.50,85.00,37.50,87.60,9.20,12.50
+Veg Biryani,Tandoori Chicken,,754.00,29.50,115.00,40.50,84.60,8.20,11.50
+Veg Biryani,Chicken Butte Masala,,824.00,34.50,122.00,37.50,91.60,10.20,14.50
+Veg Biryani,Tangdi Kebab,,714.00,27.50,90.00,32.50,84.60,8.20,11.50
+Veg Biryani,Chicken Korma,,832.00,36.00,122.00,36.30,91.10,9.00,14.10
+Veg Biryani,Chicken Tikka Masala,,756.00,28.50,104.00,36.50,89.60,9.20,13.50
+Veg Biryani,Chicken Curry,,785.00,29.50,99.00,40.50,90.60,9.20,14.50
+Veg Biryani,Kadhai Chicken,,754.00,26.50,76.00,37.50,93.60,10.20,15.50
+Veg Biryani,Murg Musallam,,842.00,30.50,141.00,56.50,87.60,8.20,13.50
+Veg Biryani,Kudhi,,683.00,22.50,5.00,21.50,101.60,11.20,15.50
+Veg Biryani,Kadhai Paneer,,704.00,30.50,35.00,17.50,92.60,10.20,15.50
+Veg Biryani,Matar Paneer,,748.00,34.20,33.00,19.40,96.30,11.90,17.00
+Veg Biryani,Malai Kofta,,744.00,28.50,38.00,20.50,104.60,11.20,13.50
+Veg Biryani,Sahi Paneer,,754.00,36.50,65.00,18.50,90.60,9.20,14.50
+Veg Biryani,Palak Paneer,,714.00,27.50,35.00,24.50,92.60,11.20,13.50
+Veg Biryani,Paneer Bhurji,,731.00,34.50,45.00,19.50,87.60,9.20,12.50
+Veg Biryani,Paneer Kofta,,744.00,30.50,50.00,16.50,102.60,9.20,13.50
+Veg Biryani,Paneer Butter Masala,,748.00,35.50,60.00,18.50,91.60,9.20,14.50
+Veg Biryani,Fish Curry,,714.00,27.50,60.00,34.50,85.60,9.20,11.50
+Veg Biryani,Lemon Pepper Fish,,660.00,21.90,45.00,33.10,84.80,7.60,9.70
+Veg Biryani,Prawn Curry,,654.00,20.50,210.00,34.50,87.60,9.20,12.50
+Veg Biryani,Fish Tikka Masala,,780.00,33.50,92.00,29.50,90.60,9.20,14.50
+Veg Biryani,Egg Curry,,664.00,27.50,375.00,21.50,87.60,8.20,12.50
+Veg Biryani,Egg Masala,,709.00,31.50,327.00,21.50,86.60,8.20,12.50
+Veg Biryani,Egg Bhurji,,641.00,26.50,327.00,19.50,83.60,7.80,10.50
+Veg Biryani,Aam Chutney,,538.00,12.90,0.00,10.30,99.60,8.30,27.30
+Veg Biryani,Coconut Chutney,,544.00,19.50,0.00,10.50,84.60,9.20,10.50
+Veg Biryani,Rasam,,560.00,15.50,8.00,13.50,94.60,10.20,11.50
+Veg Biryani,Raita,,584.00,16.50,15.00,18.50,92.60,8.20,20.50
+Veg Biryani,Kachumber,,494.00,12.80,0.00,10.90,87.10,8.80,9.50
+Pulao,Aloo Gobi,,528.00,16.80,0.00,9.50,87.60,7.50,7.50
+Pulao,Veg Jhalfrezi,,483.00,13.80,0.00,11.50,81.60,8.50,10.50
+Pulao,Bhindi Bhaji,,460.00,15.30,0.00,9.00,74.60,6.50,7.00
+Pulao,Rajma ,,619.00,18.40,0.00,16.10,101.10,13.70,9.00
+Pulao,Dal Tadka,,588.00,16.80,0.00,16.50,96.60,11.50,6.50
+Pulao,Dal Makhani,,698.00,22.80,34.00,19.50,105.60,15.50,9.50
+Pulao,Sambar,,533.00,11.70,0.00,16.20,94.40,9.80,8.40
+Pulao,Chana Masala,,568.00,14.80,0.00,14.50,96.60,12.50,10.50
+Pulao,Chhola,,638.00,19.80,5.00,16.50,101.60,12.50,10.50
+Pulao,Palak with Potato,,548.00,16.80,0.00,10.50,91.60,7.50,6.50
+Pulao,Lauki Tamatar,,472.00,14.80,0.00,8.50,77.60,5.50,8.50
+Pulao,Bhindi Masala,,573.00,20.80,0.00,11.50,88.60,10.50,11.50
+Pulao,Jeera Aloo,,546.00,18.60,0.00,9.20,86.90,6.70,5.70
+Pulao,Aloo Matar,,564.00,16.80,0.00,11.50,93.60,8.50,8.50
+Pulao,Aloo Dam,,558.00,16.80,1.00,11.50,92.60,7.50,9.50
+Pulao,Rogan Josh,,848.00,44.80,121.00,36.50,72.60,5.50,6.50
+Pulao,Chicken Masala,,648.00,23.80,85.00,34.50,73.60,5.50,7.50
+Pulao,Tandoori Chicken,,658.00,25.80,115.00,37.50,70.60,4.50,6.50
+Pulao,Chicken Butte Masala,,728.00,30.80,122.00,34.50,77.60,6.50,9.50
+Pulao,Tangdi Kebab,,618.00,23.80,90.00,29.50,70.60,4.50,6.50
+Pulao,Chicken Korma,,736.00,32.30,122.00,33.30,77.10,5.30,9.10
+Pulao,Chicken Tikka Masala,,660.00,24.80,104.00,33.50,75.60,5.50,8.50
+Pulao,Chicken Curry,,689.00,25.80,99.00,37.50,76.60,5.50,9.50
+Pulao,Kadhai Chicken,,658.00,22.80,76.00,34.50,79.60,6.50,10.50
+Pulao,Murg Musallam,,746.00,26.80,141.00,53.50,73.60,4.50,8.50
+Pulao,Kudhi,,587.00,18.80,5.00,18.50,87.60,7.50,10.50
+Pulao,Kadhai Paneer,,608.00,26.80,35.00,14.50,78.60,6.50,10.50
+Pulao,Matar Paneer,,652.00,30.50,33.00,16.40,82.30,8.20,12.00
+Pulao,Malai Kofta,,648.00,24.80,38.00,17.50,90.60,7.50,8.50
+Pulao,Sahi Paneer,,658.00,32.80,65.00,15.50,76.60,5.50,9.50
+Pulao,Palak Paneer,,618.00,23.80,35.00,21.50,78.60,7.50,8.50
+Pulao,Paneer Bhurji,,635.00,30.80,45.00,16.50,73.60,5.50,7.50
+Pulao,Paneer Kofta,,648.00,26.80,50.00,13.50,88.60,5.50,8.50
+Pulao,Paneer Butter Masala,,652.00,31.80,60.00,15.50,77.60,5.50,9.50
+Pulao,Fish Curry,,618.00,23.80,60.00,31.50,71.60,5.50,6.50
+Pulao,Lemon Pepper Fish,,564.00,18.20,45.00,30.10,70.80,3.90,4.70
+Pulao,Prawn Curry,,558.00,16.80,210.00,31.50,73.60,5.50,7.50
+Pulao,Fish Tikka Masala,,684.00,29.80,92.00,26.50,76.60,5.50,9.50
+Pulao,Egg Curry,,568.00,23.80,375.00,18.50,73.60,4.50,7.50
+Pulao,Egg Masala,,613.00,27.80,327.00,18.50,72.60,4.50,7.50
+Pulao,Egg Bhurji,,545.00,22.80,327.00,16.50,69.60,4.10,5.50
+Pulao,Aam Chutney,,442.00,9.20,0.00,7.30,85.60,4.60,22.30
+Pulao,Coconut Chutney,,448.00,15.80,0.00,7.50,70.60,5.50,5.50
+Pulao,Rasam,,464.00,11.80,8.00,10.50,80.60,6.50,6.50
+Pulao,Raita,,488.00,12.80,15.00,15.50,78.60,4.50,15.50
+Pulao,Kachumber,,398.00,9.10,0.00,7.90,73.10,5.10,4.50
+Jeera Rice,Aloo Gobi,,513.00,15.90,0.00,9.40,85.60,5.40,5.20
+Jeera Rice,Veg Jhalfrezi,,468.00,12.90,0.00,11.40,79.60,6.40,8.20
+Jeera Rice,Bhindi Bhaji,,445.00,14.40,0.00,8.90,72.60,4.40,4.70
+Jeera Rice,Rajma ,,604.00,17.50,0.00,16.00,99.10,11.60,6.70
+Jeera Rice,Dal Tadka,,573.00,15.90,0.00,16.40,94.60,9.40,4.20
+Jeera Rice,Dal Makhani,,683.00,21.90,34.00,19.40,103.60,13.40,7.20
+Jeera Rice,Sambar,,518.00,10.80,0.00,16.10,92.40,7.70,6.10
+Jeera Rice,Chana Masala,,553.00,13.90,0.00,14.40,94.60,10.40,8.20
+Jeera Rice,Chhola,,623.00,18.90,5.00,16.40,99.60,10.40,8.20
+Jeera Rice,Palak with Potato,,533.00,15.90,0.00,10.40,89.60,5.40,4.20
+Jeera Rice,Lauki Tamatar,,457.00,13.90,0.00,8.40,75.60,3.40,6.20
+Jeera Rice,Bhindi Masala,,558.00,19.90,0.00,11.40,86.60,8.40,9.20
+Jeera Rice,Jeera Aloo,,531.00,17.70,0.00,9.10,84.90,4.60,3.40
+Jeera Rice,Aloo Matar,,549.00,15.90,0.00,11.40,91.60,6.40,6.20
+Jeera Rice,Aloo Dam,,543.00,15.90,1.00,11.40,90.60,5.40,7.20
+Jeera Rice,Rogan Josh,,833.00,43.90,121.00,36.40,70.60,3.40,4.20
+Jeera Rice,Chicken Masala,,633.00,22.90,85.00,34.40,71.60,3.40,5.20
+Jeera Rice,Tandoori Chicken,,643.00,24.90,115.00,37.40,68.60,2.40,4.20
+Jeera Rice,Chicken Butte Masala,,713.00,29.90,122.00,34.40,75.60,4.40,7.20
+Jeera Rice,Tangdi Kebab,,603.00,22.90,90.00,29.40,68.60,2.40,4.20
+Jeera Rice,Chicken Korma,,721.00,31.40,122.00,33.20,75.10,3.20,6.80
+Jeera Rice,Chicken Tikka Masala,,645.00,23.90,104.00,33.40,73.60,3.40,6.20
+Jeera Rice,Chicken Curry,,674.00,24.90,99.00,37.40,74.60,3.40,7.20
+Jeera Rice,Kadhai Chicken,,643.00,21.90,76.00,34.40,77.60,4.40,8.20
+Jeera Rice,Murg Musallam,,731.00,25.90,141.00,53.40,71.60,2.40,6.20
+Jeera Rice,Kudhi,,572.00,17.90,5.00,18.40,85.60,5.40,8.20
+Jeera Rice,Kadhai Paneer,,593.00,25.90,35.00,14.40,76.60,4.40,8.20
+Jeera Rice,Matar Paneer,,637.00,29.60,33.00,16.30,80.30,6.10,9.70
+Jeera Rice,Malai Kofta,,633.00,23.90,38.00,17.40,88.60,5.40,6.20
+Jeera Rice,Sahi Paneer,,643.00,31.90,65.00,15.40,74.60,3.40,7.20
+Jeera Rice,Palak Paneer,,603.00,22.90,35.00,21.40,76.60,5.40,6.20
+Jeera Rice,Paneer Bhurji,,620.00,29.90,45.00,16.40,71.60,3.40,5.20
+Jeera Rice,Paneer Kofta,,633.00,25.90,50.00,13.40,86.60,3.40,6.20
+Jeera Rice,Paneer Butter Masala,,637.00,30.90,60.00,15.40,75.60,3.40,7.20
+Jeera Rice,Fish Curry,,603.00,22.90,60.00,31.40,69.60,3.40,4.20
+Jeera Rice,Lemon Pepper Fish,,549.00,17.30,45.00,30.00,68.80,1.80,2.40
+Jeera Rice,Prawn Curry,,543.00,15.90,210.00,31.40,71.60,3.40,5.20
+Jeera Rice,Fish Tikka Masala,,669.00,28.90,92.00,26.40,74.60,3.40,7.20
+Jeera Rice,Egg Curry,,553.00,22.90,375.00,18.40,71.60,2.40,5.20
+Jeera Rice,Egg Masala,,598.00,26.90,327.00,18.40,70.60,2.40,5.20
+Jeera Rice,Egg Bhurji,,530.00,21.90,327.00,16.40,67.60,2.00,3.20
+Jeera Rice,Aam Chutney,,427.00,8.30,0.00,7.20,83.60,2.50,20.00
+Jeera Rice,Coconut Chutney,,433.00,14.90,0.00,7.40,68.60,3.40,3.20
+Jeera Rice,Rasam,,449.00,10.90,8.00,10.40,78.60,4.40,4.20
+Jeera Rice,Raita,,473.00,11.90,15.00,15.40,76.60,2.40,13.20
+Jeera Rice,Kachumber,,383.00,8.20,0.00,7.80,71.10,3.00,2.20
+Sabudana Khichdi,Aloo Gobi,,607.00,31.90,0.00,9.90,74.20,9.50,7.40
+Sabudana Khichdi,Veg Jhalfrezi,,562.00,28.90,0.00,11.90,68.20,10.50,10.40
+Sabudana Khichdi,Bhindi Bhaji,,539.00,30.40,0.00,9.40,61.20,8.50,6.90
+Sabudana Khichdi,Rajma ,,698.00,33.50,0.00,16.50,87.70,15.70,8.90
+Sabudana Khichdi,Dal Tadka,,667.00,31.90,0.00,16.90,83.20,13.50,6.40
+Sabudana Khichdi,Dal Makhani,,777.00,37.90,34.00,19.90,92.20,17.50,9.40
+Sabudana Khichdi,Sambar,,612.00,26.80,0.00,16.60,81.00,11.80,8.30
+Sabudana Khichdi,Chana Masala,,647.00,29.90,0.00,14.90,83.20,14.50,10.40
+Sabudana Khichdi,Chhola,,717.00,34.90,5.00,16.90,88.20,14.50,10.40
+Sabudana Khichdi,Palak with Potato,,627.00,31.90,0.00,10.90,78.20,9.50,6.40
+Sabudana Khichdi,Lauki Tamatar,,551.00,29.90,0.00,8.90,64.20,7.50,8.40
+Sabudana Khichdi,Bhindi Masala,,652.00,35.90,0.00,11.90,75.20,12.50,11.40
+Sabudana Khichdi,Jeera Aloo,,625.00,33.70,0.00,9.60,73.50,8.70,5.60
+Sabudana Khichdi,Aloo Matar,,643.00,31.90,0.00,11.90,80.20,10.50,8.40
+Sabudana Khichdi,Aloo Dam,,637.00,31.90,1.00,11.90,79.20,9.50,9.40
+Sabudana Khichdi,Rogan Josh,,927.00,59.90,121.00,36.90,59.20,7.50,6.40
+Sabudana Khichdi,Chicken Masala,,727.00,38.90,85.00,34.90,60.20,7.50,7.40
+Sabudana Khichdi,Tandoori Chicken,,737.00,40.90,115.00,37.90,57.20,6.50,6.40
+Sabudana Khichdi,Chicken Butte Masala,,807.00,45.90,122.00,34.90,64.20,8.50,9.40
+Sabudana Khichdi,Tangdi Kebab,,697.00,38.90,90.00,29.90,57.20,6.50,6.40
+Sabudana Khichdi,Chicken Korma,,815.00,47.40,122.00,33.70,63.70,7.30,9.00
+Sabudana Khichdi,Chicken Tikka Masala,,739.00,39.90,104.00,33.90,62.20,7.50,8.40
+Sabudana Khichdi,Chicken Curry,,768.00,40.90,99.00,37.90,63.20,7.50,9.40
+Sabudana Khichdi,Kadhai Chicken,,737.00,37.90,76.00,34.90,66.20,8.50,10.40
+Sabudana Khichdi,Murg Musallam,,825.00,41.90,141.00,53.90,60.20,6.50,8.40
+Sabudana Khichdi,Kudhi,,666.00,33.90,5.00,18.90,74.20,9.50,10.40
+Sabudana Khichdi,Kadhai Paneer,,687.00,41.90,35.00,14.90,65.20,8.50,10.40
+Sabudana Khichdi,Matar Paneer,,731.00,45.60,33.00,16.80,68.90,10.20,11.90
+Sabudana Khichdi,Malai Kofta,,727.00,39.90,38.00,17.90,77.20,9.50,8.40
+Sabudana Khichdi,Sahi Paneer,,737.00,47.90,65.00,15.90,63.20,7.50,9.40
+Sabudana Khichdi,Palak Paneer,,697.00,38.90,35.00,21.90,65.20,9.50,8.40
+Sabudana Khichdi,Paneer Bhurji,,714.00,45.90,45.00,16.90,60.20,7.50,7.40
+Sabudana Khichdi,Paneer Kofta,,727.00,41.90,50.00,13.90,75.20,7.50,8.40
+Sabudana Khichdi,Paneer Butter Masala,,731.00,46.90,60.00,15.90,64.20,7.50,9.40
+Sabudana Khichdi,Fish Curry,,697.00,38.90,60.00,31.90,58.20,7.50,6.40
+Sabudana Khichdi,Lemon Pepper Fish,,643.00,33.30,45.00,30.50,57.40,5.90,4.60
+Sabudana Khichdi,Prawn Curry,,637.00,31.90,210.00,31.90,60.20,7.50,7.40
+Sabudana Khichdi,Fish Tikka Masala,,763.00,44.90,92.00,26.90,63.20,7.50,9.40
+Sabudana Khichdi,Egg Curry,,647.00,38.90,375.00,18.90,60.20,6.50,7.40
+Sabudana Khichdi,Egg Masala,,692.00,42.90,327.00,18.90,59.20,6.50,7.40
+Sabudana Khichdi,Egg Bhurji,,624.00,37.90,327.00,16.90,56.20,6.10,5.40
+Sabudana Khichdi,Aam Chutney,,521.00,24.30,0.00,7.70,72.20,6.60,22.20
+Sabudana Khichdi,Coconut Chutney,,527.00,30.90,0.00,7.90,57.20,7.50,5.40
+Sabudana Khichdi,Rasam,,543.00,26.90,8.00,10.90,67.20,8.50,6.40
+Sabudana Khichdi,Raita,,567.00,27.90,15.00,15.90,65.20,6.50,15.40
+Sabudana Khichdi,Kachumber,,477.00,24.20,0.00,8.30,59.70,7.10,4.40
+Lemon Rice,Aloo Gobi,,599.00,28.70,0.00,11.20,77.70,7.70,4.80
+Lemon Rice,Veg Jhalfrezi,,554.00,25.70,0.00,13.20,71.70,8.70,7.80
+Lemon Rice,Bhindi Bhaji,,531.00,27.20,0.00,10.70,64.70,6.70,4.30
+Lemon Rice,Rajma ,,690.00,30.30,0.00,17.80,91.20,13.90,6.30
+Lemon Rice,Dal Tadka,,659.00,28.70,0.00,18.20,86.70,11.70,3.80
+Lemon Rice,Dal Makhani,,769.00,34.70,34.00,21.20,95.70,15.70,6.80
+Lemon Rice,Sambar,,604.00,23.60,0.00,17.90,84.50,10.00,5.70
+Lemon Rice,Chana Masala,,639.00,26.70,0.00,16.20,86.70,12.70,7.80
+Lemon Rice,Chhola,,709.00,31.70,5.00,18.20,91.70,12.70,7.80
+Lemon Rice,Palak with Potato,,619.00,28.70,0.00,12.20,81.70,7.70,3.80
+Lemon Rice,Lauki Tamatar,,543.00,26.70,0.00,10.20,67.70,5.70,5.80
+Lemon Rice,Bhindi Masala,,644.00,32.70,0.00,13.20,78.70,10.70,8.80
+Lemon Rice,Jeera Aloo,,617.00,30.50,0.00,10.90,77.00,6.90,3.00
+Lemon Rice,Aloo Matar,,635.00,28.70,0.00,13.20,83.70,8.70,5.80
+Lemon Rice,Aloo Dam,,629.00,28.70,1.00,13.20,82.70,7.70,6.80
+Lemon Rice,Rogan Josh,,919.00,56.70,121.00,38.20,62.70,5.70,3.80
+Lemon Rice,Chicken Masala,,719.00,35.70,85.00,36.20,63.70,5.70,4.80
+Lemon Rice,Tandoori Chicken,,729.00,37.70,115.00,39.20,60.70,4.70,3.80
+Lemon Rice,Chicken Butte Masala,,799.00,42.70,122.00,36.20,67.70,6.70,6.80
+Lemon Rice,Tangdi Kebab,,689.00,35.70,90.00,31.20,60.70,4.70,3.80
+Lemon Rice,Chicken Korma,,807.00,44.20,122.00,35.00,67.20,5.50,6.40
+Lemon Rice,Chicken Tikka Masala,,731.00,36.70,104.00,35.20,65.70,5.70,5.80
+Lemon Rice,Chicken Curry,,760.00,37.70,99.00,39.20,66.70,5.70,6.80
+Lemon Rice,Kadhai Chicken,,729.00,34.70,76.00,36.20,69.70,6.70,7.80
+Lemon Rice,Murg Musallam,,817.00,38.70,141.00,55.20,63.70,4.70,5.80
+Lemon Rice,Kudhi,,658.00,30.70,5.00,20.20,77.70,7.70,7.80
+Lemon Rice,Kadhai Paneer,,679.00,38.70,35.00,16.20,68.70,6.70,7.80
+Lemon Rice,Matar Paneer,,723.00,42.40,33.00,18.10,72.40,8.40,9.30
+Lemon Rice,Malai Kofta,,719.00,36.70,38.00,19.20,80.70,7.70,5.80
+Lemon Rice,Sahi Paneer,,729.00,44.70,65.00,17.20,66.70,5.70,6.80
+Lemon Rice,Palak Paneer,,689.00,35.70,35.00,23.20,68.70,7.70,5.80
+Lemon Rice,Paneer Bhurji,,706.00,42.70,45.00,18.20,63.70,5.70,4.80
+Lemon Rice,Paneer Kofta,,719.00,38.70,50.00,15.20,78.70,5.70,5.80
+Lemon Rice,Paneer Butter Masala,,723.00,43.70,60.00,17.20,67.70,5.70,6.80
+Lemon Rice,Fish Curry,,689.00,35.70,60.00,33.20,61.70,5.70,3.80
+Lemon Rice,Lemon Pepper Fish,,635.00,30.10,45.00,31.80,60.90,4.10,2.00
+Lemon Rice,Prawn Curry,,629.00,28.70,210.00,33.20,63.70,5.70,4.80
+Lemon Rice,Fish Tikka Masala,,755.00,41.70,92.00,28.20,66.70,5.70,6.80
+Lemon Rice,Egg Curry,,639.00,35.70,375.00,20.20,63.70,4.70,4.80
+Lemon Rice,Egg Masala,,684.00,39.70,327.00,20.20,62.70,4.70,4.80
+Lemon Rice,Egg Bhurji,,616.00,34.70,327.00,18.20,59.70,4.30,2.80
+Lemon Rice,Aam Chutney,,513.00,21.10,0.00,9.00,75.70,4.80,19.60
+Lemon Rice,Coconut Chutney,,519.00,27.70,0.00,9.20,60.70,5.70,2.80
+Lemon Rice,Rasam,,535.00,23.70,8.00,12.20,70.70,6.70,3.80
+Lemon Rice,Raita,,559.00,24.70,15.00,17.20,68.70,4.70,12.80
+Lemon Rice,Kachumber,,469.00,21.00,0.00,9.60,63.20,5.30,1.80
+Khichdi,Aloo Gobi,,443.00,15.20,15.00,15.60,62.70,13.60,4.80
+Khichdi,Veg Jhalfrezi,,398.00,12.20,15.00,17.60,56.70,14.60,7.80
+Khichdi,Bhindi Bhaji,,375.00,13.70,15.00,15.10,49.70,12.60,4.30
+Khichdi,Rajma ,,534.00,16.80,15.00,22.20,76.20,19.80,6.30
+Khichdi,Dal Tadka,,503.00,15.20,15.00,22.60,71.70,17.60,3.80
+Khichdi,Dal Makhani,,613.00,21.20,49.00,25.60,80.70,21.60,6.80
+Khichdi,Sambar,,448.00,10.10,15.00,22.30,69.50,15.90,5.70
+Khichdi,Chana Masala,,483.00,13.20,15.00,20.60,71.70,18.60,7.80
+Khichdi,Chhola,,553.00,18.20,20.00,22.60,76.70,18.60,7.80
+Khichdi,Palak with Potato,,463.00,15.20,15.00,16.60,66.70,13.60,3.80
+Khichdi,Lauki Tamatar,,387.00,13.20,15.00,14.60,52.70,11.60,5.80
+Khichdi,Bhindi Masala,,488.00,19.20,15.00,17.60,63.70,16.60,8.80
+Khichdi,Jeera Aloo,,461.00,17.00,15.00,15.30,62.00,12.80,3.00
+Khichdi,Aloo Matar,,479.00,15.20,15.00,17.60,68.70,14.60,5.80
+Khichdi,Aloo Dam,,473.00,15.20,16.00,17.60,67.70,13.60,6.80
+Khichdi,Rogan Josh,,763.00,43.20,136.00,42.60,47.70,11.60,3.80
+Khichdi,Chicken Masala,,563.00,22.20,100.00,40.60,48.70,11.60,4.80
+Khichdi,Tandoori Chicken,,573.00,24.20,130.00,43.60,45.70,10.60,3.80
+Khichdi,Chicken Butte Masala,,643.00,29.20,137.00,40.60,52.70,12.60,6.80
+Khichdi,Tangdi Kebab,,533.00,22.20,105.00,35.60,45.70,10.60,3.80
+Khichdi,Chicken Korma,,651.00,30.70,137.00,39.40,52.20,11.40,6.40
+Khichdi,Chicken Tikka Masala,,575.00,23.20,119.00,39.60,50.70,11.60,5.80
+Khichdi,Chicken Curry,,604.00,24.20,114.00,43.60,51.70,11.60,6.80
+Khichdi,Kadhai Chicken,,573.00,21.20,91.00,40.60,54.70,12.60,7.80
+Khichdi,Murg Musallam,,661.00,25.20,156.00,59.60,48.70,10.60,5.80
+Khichdi,Kudhi,,502.00,17.20,20.00,24.60,62.70,13.60,7.80
+Khichdi,Kadhai Paneer,,523.00,25.20,50.00,20.60,53.70,12.60,7.80
+Khichdi,Matar Paneer,,567.00,28.90,48.00,22.50,57.40,14.30,9.30
+Khichdi,Malai Kofta,,563.00,23.20,53.00,23.60,65.70,13.60,5.80
+Khichdi,Sahi Paneer,,573.00,31.20,80.00,21.60,51.70,11.60,6.80
+Khichdi,Palak Paneer,,533.00,22.20,50.00,27.60,53.70,13.60,5.80
+Khichdi,Paneer Bhurji,,550.00,29.20,60.00,22.60,48.70,11.60,4.80
+Khichdi,Paneer Kofta,,563.00,25.20,65.00,19.60,63.70,11.60,5.80
+Khichdi,Paneer Butter Masala,,567.00,30.20,75.00,21.60,52.70,11.60,6.80
+Khichdi,Fish Curry,,533.00,22.20,75.00,37.60,46.70,11.60,3.80
+Khichdi,Lemon Pepper Fish,,479.00,16.60,60.00,36.20,45.90,10.00,2.00
+Khichdi,Prawn Curry,,473.00,15.20,225.00,37.60,48.70,11.60,4.80
+Khichdi,Fish Tikka Masala,,599.00,28.20,107.00,32.60,51.70,11.60,6.80
+Khichdi,Egg Curry,,483.00,22.20,390.00,24.60,48.70,10.60,4.80
+Khichdi,Egg Masala,,528.00,26.20,342.00,24.60,47.70,10.60,4.80
+Khichdi,Egg Bhurji,,460.00,21.20,342.00,22.60,44.70,10.20,2.80
+Khichdi,Aam Chutney,,357.00,7.60,15.00,13.40,60.70,10.70,19.60
+Khichdi,Coconut Chutney,,363.00,14.20,15.00,13.60,45.70,11.60,2.80
+Khichdi,Rasam,,379.00,10.20,23.00,16.60,55.70,12.60,3.80
+Khichdi,Raita,,403.00,11.20,30.00,21.60,53.70,10.60,12.80
+Khichdi,Kachumber,,313.00,7.50,15.00,14.00,48.20,11.20,1.80
+Kolkata Chicken Biryani,Aloo Gobi,,642.00,30.00,83.00,28.00,68.00,6.00,6.00
+Kolkata Chicken Biryani,Veg Jhalfrezi,,597.00,27.00,83.00,30.00,62.00,7.00,9.00
+Kolkata Chicken Biryani,Bhindi Bhaji,,574.00,28.50,83.00,27.50,55.00,5.00,5.50
+Kolkata Chicken Biryani,Rajma ,,733.00,31.60,83.00,34.60,81.50,12.20,7.50
+Kolkata Chicken Biryani,Dal Tadka,,702.00,30.00,83.00,35.00,77.00,10.00,5.00
+Kolkata Chicken Biryani,Dal Makhani,,812.00,36.00,117.00,38.00,86.00,14.00,8.00
+Kolkata Chicken Biryani,Sambar,,647.00,24.90,83.00,34.70,74.80,8.30,6.90
+Kolkata Chicken Biryani,Chana Masala,,682.00,28.00,83.00,33.00,77.00,11.00,9.00
+Kolkata Chicken Biryani,Chhola,,752.00,33.00,88.00,35.00,82.00,11.00,9.00
+Kolkata Chicken Biryani,Palak with Potato,,662.00,30.00,83.00,29.00,72.00,6.00,5.00
+Kolkata Chicken Biryani,Lauki Tamatar,,586.00,28.00,83.00,27.00,58.00,4.00,7.00
+Kolkata Chicken Biryani,Bhindi Masala,,687.00,34.00,83.00,30.00,69.00,9.00,10.00
+Kolkata Chicken Biryani,Jeera Aloo,,660.00,31.80,83.00,27.70,67.30,5.20,4.20
+Kolkata Chicken Biryani,Aloo Matar,,678.00,30.00,83.00,30.00,74.00,7.00,7.00
+Kolkata Chicken Biryani,Aloo Dam,,672.00,30.00,84.00,30.00,73.00,6.00,8.00
+Kolkata Chicken Biryani,Rogan Josh,,962.00,58.00,204.00,55.00,53.00,4.00,5.00
+Kolkata Chicken Biryani,Chicken Masala,,762.00,37.00,168.00,53.00,54.00,4.00,6.00
+Kolkata Chicken Biryani,Tandoori Chicken,,772.00,39.00,198.00,56.00,51.00,3.00,5.00
+Kolkata Chicken Biryani,Chicken Butte Masala,,842.00,44.00,205.00,53.00,58.00,5.00,8.00
+Kolkata Chicken Biryani,Tangdi Kebab,,732.00,37.00,173.00,48.00,51.00,3.00,5.00
+Kolkata Chicken Biryani,Chicken Korma,,850.00,45.50,205.00,51.80,57.50,3.80,7.60
+Kolkata Chicken Biryani,Chicken Tikka Masala,,774.00,38.00,187.00,52.00,56.00,4.00,7.00
+Kolkata Chicken Biryani,Chicken Curry,,803.00,39.00,182.00,56.00,57.00,4.00,8.00
+Kolkata Chicken Biryani,Kadhai Chicken,,772.00,36.00,159.00,53.00,60.00,5.00,9.00
+Kolkata Chicken Biryani,Murg Musallam,,860.00,40.00,224.00,72.00,54.00,3.00,7.00
+Kolkata Chicken Biryani,Kudhi,,701.00,32.00,88.00,37.00,68.00,6.00,9.00
+Kolkata Chicken Biryani,Kadhai Paneer,,722.00,40.00,118.00,33.00,59.00,5.00,9.00
+Kolkata Chicken Biryani,Matar Paneer,,766.00,43.70,116.00,34.90,62.70,6.70,10.50
+Kolkata Chicken Biryani,Malai Kofta,,762.00,38.00,121.00,36.00,71.00,6.00,7.00
+Kolkata Chicken Biryani,Sahi Paneer,,772.00,46.00,148.00,34.00,57.00,4.00,8.00
+Kolkata Chicken Biryani,Palak Paneer,,732.00,37.00,118.00,40.00,59.00,6.00,7.00
+Kolkata Chicken Biryani,Paneer Bhurji,,749.00,44.00,128.00,35.00,54.00,4.00,6.00
+Kolkata Chicken Biryani,Paneer Kofta,,762.00,40.00,133.00,32.00,69.00,4.00,7.00
+Kolkata Chicken Biryani,Paneer Butter Masala,,766.00,45.00,143.00,34.00,58.00,4.00,8.00
+Kolkata Chicken Biryani,Fish Curry,,732.00,37.00,143.00,50.00,52.00,4.00,5.00
+Kolkata Chicken Biryani,Lemon Pepper Fish,,678.00,31.40,128.00,48.60,51.20,2.40,3.20
+Kolkata Chicken Biryani,Prawn Curry,,672.00,30.00,293.00,50.00,54.00,4.00,6.00
+Kolkata Chicken Biryani,Fish Tikka Masala,,798.00,43.00,175.00,45.00,57.00,4.00,8.00
+Kolkata Chicken Biryani,Egg Curry,,682.00,37.00,458.00,37.00,54.00,3.00,6.00
+Kolkata Chicken Biryani,Egg Masala,,727.00,41.00,410.00,37.00,53.00,3.00,6.00
+Kolkata Chicken Biryani,Egg Bhurji,,659.00,36.00,410.00,35.00,50.00,2.60,4.00
+Kolkata Chicken Biryani,Aam Chutney,,556.00,22.40,83.00,25.80,66.00,3.10,20.80
+Kolkata Chicken Biryani,Coconut Chutney,,562.00,29.00,83.00,26.00,51.00,4.00,4.00
+Kolkata Chicken Biryani,Rasam,,578.00,25.00,91.00,29.00,61.00,5.00,5.00
+Kolkata Chicken Biryani,Raita,,602.00,26.00,98.00,34.00,59.00,3.00,14.00
+Kolkata Chicken Biryani,Kachumber,,512.00,22.30,83.00,26.40,53.50,3.60,3.00
+Hyderabadi Chicken Biryani,Aloo Gobi,,717.00,29.70,88.00,28.30,85.80,6.20,5.80
+Hyderabadi Chicken Biryani,Veg Jhalfrezi,,672.00,26.70,88.00,30.30,79.80,7.20,8.80
+Hyderabadi Chicken Biryani,Bhindi Bhaji,,649.00,28.20,88.00,27.80,72.80,5.20,5.30
+Hyderabadi Chicken Biryani,Rajma ,,808.00,31.30,88.00,34.90,99.30,12.40,7.30
+Hyderabadi Chicken Biryani,Dal Tadka,,777.00,29.70,88.00,35.30,94.80,10.20,4.80
+Hyderabadi Chicken Biryani,Dal Makhani,,887.00,35.70,122.00,38.30,103.80,14.20,7.80
+Hyderabadi Chicken Biryani,Sambar,,722.00,24.60,88.00,35.00,92.60,8.50,6.70
+Hyderabadi Chicken Biryani,Chana Masala,,757.00,27.70,88.00,33.30,94.80,11.20,8.80
+Hyderabadi Chicken Biryani,Chhola,,827.00,32.70,93.00,35.30,99.80,11.20,8.80
+Hyderabadi Chicken Biryani,Palak with Potato,,737.00,29.70,88.00,29.30,89.80,6.20,4.80
+Hyderabadi Chicken Biryani,Lauki Tamatar,,661.00,27.70,88.00,27.30,75.80,4.20,6.80
+Hyderabadi Chicken Biryani,Bhindi Masala,,762.00,33.70,88.00,30.30,86.80,9.20,9.80
+Hyderabadi Chicken Biryani,Jeera Aloo,,735.00,31.50,88.00,28.00,85.10,5.40,4.00
+Hyderabadi Chicken Biryani,Aloo Matar,,753.00,29.70,88.00,30.30,91.80,7.20,6.80
+Hyderabadi Chicken Biryani,Aloo Dam,,747.00,29.70,89.00,30.30,90.80,6.20,7.80
+Hyderabadi Chicken Biryani,Rogan Josh,,1037.00,57.70,209.00,55.30,70.80,4.20,4.80
+Hyderabadi Chicken Biryani,Chicken Masala,,837.00,36.70,173.00,53.30,71.80,4.20,5.80
+Hyderabadi Chicken Biryani,Tandoori Chicken,,847.00,38.70,203.00,56.30,68.80,3.20,4.80
+Hyderabadi Chicken Biryani,Chicken Butte Masala,,917.00,43.70,210.00,53.30,75.80,5.20,7.80
+Hyderabadi Chicken Biryani,Tangdi Kebab,,807.00,36.70,178.00,48.30,68.80,3.20,4.80
+Hyderabadi Chicken Biryani,Chicken Korma,,925.00,45.20,210.00,52.10,75.30,4.00,7.40
+Hyderabadi Chicken Biryani,Chicken Tikka Masala,,849.00,37.70,192.00,52.30,73.80,4.20,6.80
+Hyderabadi Chicken Biryani,Chicken Curry,,878.00,38.70,187.00,56.30,74.80,4.20,7.80
+Hyderabadi Chicken Biryani,Kadhai Chicken,,847.00,35.70,164.00,53.30,77.80,5.20,8.80
+Hyderabadi Chicken Biryani,Murg Musallam,,935.00,39.70,229.00,72.30,71.80,3.20,6.80
+Hyderabadi Chicken Biryani,Kudhi,,776.00,31.70,93.00,37.30,85.80,6.20,8.80
+Hyderabadi Chicken Biryani,Kadhai Paneer,,797.00,39.70,123.00,33.30,76.80,5.20,8.80
+Hyderabadi Chicken Biryani,Matar Paneer,,841.00,43.40,121.00,35.20,80.50,6.90,10.30
+Hyderabadi Chicken Biryani,Malai Kofta,,837.00,37.70,126.00,36.30,88.80,6.20,6.80
+Hyderabadi Chicken Biryani,Sahi Paneer,,847.00,45.70,153.00,34.30,74.80,4.20,7.80
+Hyderabadi Chicken Biryani,Palak Paneer,,807.00,36.70,123.00,40.30,76.80,6.20,6.80
+Hyderabadi Chicken Biryani,Paneer Bhurji,,824.00,43.70,133.00,35.30,71.80,4.20,5.80
+Hyderabadi Chicken Biryani,Paneer Kofta,,837.00,39.70,138.00,32.30,86.80,4.20,6.80
+Hyderabadi Chicken Biryani,Paneer Butter Masala,,841.00,44.70,148.00,34.30,75.80,4.20,7.80
+Hyderabadi Chicken Biryani,Fish Curry,,807.00,36.70,148.00,50.30,69.80,4.20,4.80
+Hyderabadi Chicken Biryani,Lemon Pepper Fish,,753.00,31.10,133.00,48.90,69.00,2.60,3.00
+Hyderabadi Chicken Biryani,Prawn Curry,,747.00,29.70,298.00,50.30,71.80,4.20,5.80
+Hyderabadi Chicken Biryani,Fish Tikka Masala,,873.00,42.70,180.00,45.30,74.80,4.20,7.80
+Hyderabadi Chicken Biryani,Egg Curry,,757.00,36.70,463.00,37.30,71.80,3.20,5.80
+Hyderabadi Chicken Biryani,Egg Masala,,802.00,40.70,415.00,37.30,70.80,3.20,5.80
+Hyderabadi Chicken Biryani,Egg Bhurji,,734.00,35.70,415.00,35.30,67.80,2.80,3.80
+Hyderabadi Chicken Biryani,Aam Chutney,,631.00,22.10,88.00,26.10,83.80,3.30,20.60
+Hyderabadi Chicken Biryani,Coconut Chutney,,637.00,28.70,88.00,26.30,68.80,4.20,3.80
+Hyderabadi Chicken Biryani,Rasam,,653.00,24.70,96.00,29.30,78.80,5.20,4.80
+Hyderabadi Chicken Biryani,Raita,,677.00,25.70,103.00,34.30,76.80,3.20,13.80
+Hyderabadi Chicken Biryani,Kachumber,,587.00,22.00,88.00,26.70,71.30,3.80,2.80
+Chicken Dum Biryani,Aloo Gobi,,843.00,33.60,90.00,29.00,87.50,6.50,6.00
+Chicken Dum Biryani,Veg Jhalfrezi,,798.00,30.60,90.00,31.00,81.50,7.50,9.00
+Chicken Dum Biryani,Bhindi Bhaji,,775.00,32.10,90.00,28.50,74.50,5.50,5.50
+Chicken Dum Biryani,Rajma ,,934.00,35.20,90.00,35.60,101.00,12.70,7.50
+Chicken Dum Biryani,Dal Tadka,,903.00,33.60,90.00,36.00,96.50,10.50,5.00
+Chicken Dum Biryani,Dal Makhani,,1013.00,39.60,124.00,39.00,105.50,14.50,8.00
+Chicken Dum Biryani,Sambar,,848.00,28.50,90.00,35.70,94.30,8.80,6.90
+Chicken Dum Biryani,Chana Masala,,883.00,31.60,90.00,34.00,96.50,11.50,9.00
+Chicken Dum Biryani,Chhola,,953.00,36.60,95.00,36.00,101.50,11.50,9.00
+Chicken Dum Biryani,Palak with Potato,,863.00,33.60,90.00,30.00,91.50,6.50,5.00
+Chicken Dum Biryani,Lauki Tamatar,,787.00,31.60,90.00,28.00,77.50,4.50,7.00
+Chicken Dum Biryani,Bhindi Masala,,888.00,37.60,90.00,31.00,88.50,9.50,10.00
+Chicken Dum Biryani,Jeera Aloo,,861.00,35.40,90.00,28.70,86.80,5.70,4.20
+Chicken Dum Biryani,Aloo Matar,,879.00,33.60,90.00,31.00,93.50,7.50,7.00
+Chicken Dum Biryani,Aloo Dam,,873.00,33.60,91.00,31.00,92.50,6.50,8.00
+Chicken Dum Biryani,Rogan Josh,,1163.00,61.60,211.00,56.00,72.50,4.50,5.00
+Chicken Dum Biryani,Chicken Masala,,963.00,40.60,175.00,54.00,73.50,4.50,6.00
+Chicken Dum Biryani,Tandoori Chicken,,973.00,42.60,205.00,57.00,70.50,3.50,5.00
+Chicken Dum Biryani,Chicken Butte Masala,,1043.00,47.60,212.00,54.00,77.50,5.50,8.00
+Chicken Dum Biryani,Tangdi Kebab,,933.00,40.60,180.00,49.00,70.50,3.50,5.00
+Chicken Dum Biryani,Chicken Korma,,1051.00,49.10,212.00,52.80,77.00,4.30,7.60
+Chicken Dum Biryani,Chicken Tikka Masala,,975.00,41.60,194.00,53.00,75.50,4.50,7.00
+Chicken Dum Biryani,Chicken Curry,,1004.00,42.60,189.00,57.00,76.50,4.50,8.00
+Chicken Dum Biryani,Kadhai Chicken,,973.00,39.60,166.00,54.00,79.50,5.50,9.00
+Chicken Dum Biryani,Murg Musallam,,1061.00,43.60,231.00,73.00,73.50,3.50,7.00
+Chicken Dum Biryani,Kudhi,,902.00,35.60,95.00,38.00,87.50,6.50,9.00
+Chicken Dum Biryani,Kadhai Paneer,,923.00,43.60,125.00,34.00,78.50,5.50,9.00
+Chicken Dum Biryani,Matar Paneer,,967.00,47.30,123.00,35.90,82.20,7.20,10.50
+Chicken Dum Biryani,Malai Kofta,,963.00,41.60,128.00,37.00,90.50,6.50,7.00
+Chicken Dum Biryani,Sahi Paneer,,973.00,49.60,155.00,35.00,76.50,4.50,8.00
+Chicken Dum Biryani,Palak Paneer,,933.00,40.60,125.00,41.00,78.50,6.50,7.00
+Chicken Dum Biryani,Paneer Bhurji,,950.00,47.60,135.00,36.00,73.50,4.50,6.00
+Chicken Dum Biryani,Paneer Kofta,,963.00,43.60,140.00,33.00,88.50,4.50,7.00
+Chicken Dum Biryani,Paneer Butter Masala,,967.00,48.60,150.00,35.00,77.50,4.50,8.00
+Chicken Dum Biryani,Fish Curry,,933.00,40.60,150.00,51.00,71.50,4.50,5.00
+Chicken Dum Biryani,Lemon Pepper Fish,,879.00,35.00,135.00,49.60,70.70,2.90,3.20
+Chicken Dum Biryani,Prawn Curry,,873.00,33.60,300.00,51.00,73.50,4.50,6.00
+Chicken Dum Biryani,Fish Tikka Masala,,999.00,46.60,182.00,46.00,76.50,4.50,8.00
+Chicken Dum Biryani,Egg Curry,,883.00,40.60,465.00,38.00,73.50,3.50,6.00
+Chicken Dum Biryani,Egg Masala,,928.00,44.60,417.00,38.00,72.50,3.50,6.00
+Chicken Dum Biryani,Egg Bhurji,,860.00,39.60,417.00,36.00,69.50,3.10,4.00
+Chicken Dum Biryani,Aam Chutney,,757.00,26.00,90.00,26.80,85.50,3.60,20.80
+Chicken Dum Biryani,Coconut Chutney,,763.00,32.60,90.00,27.00,70.50,4.50,4.00
+Chicken Dum Biryani,Rasam,,779.00,28.60,98.00,30.00,80.50,5.50,5.00
+Chicken Dum Biryani,Raita,,803.00,29.60,105.00,35.00,78.50,3.50,14.00
+Chicken Dum Biryani,Kachumber,,713.00,25.90,90.00,27.40,73.00,4.10,3.00
+Mutton Biryani,Aloo Gobi,,696.00,35.00,77.00,28.00,69.00,6.00,5.00
+Mutton Biryani,Veg Jhalfrezi,,651.00,32.00,77.00,30.00,63.00,7.00,8.00
+Mutton Biryani,Bhindi Bhaji,,628.00,33.50,77.00,27.50,56.00,5.00,4.50
+Mutton Biryani,Rajma ,,787.00,36.60,77.00,34.60,82.50,12.20,6.50
+Mutton Biryani,Dal Tadka,,756.00,35.00,77.00,35.00,78.00,10.00,4.00
+Mutton Biryani,Dal Makhani,,866.00,41.00,111.00,38.00,87.00,14.00,7.00
+Mutton Biryani,Sambar,,701.00,29.90,77.00,34.70,75.80,8.30,5.90
+Mutton Biryani,Chana Masala,,736.00,33.00,77.00,33.00,78.00,11.00,8.00
+Mutton Biryani,Chhola,,806.00,38.00,82.00,35.00,83.00,11.00,8.00
+Mutton Biryani,Palak with Potato,,716.00,35.00,77.00,29.00,73.00,6.00,4.00
+Mutton Biryani,Lauki Tamatar,,640.00,33.00,77.00,27.00,59.00,4.00,6.00
+Mutton Biryani,Bhindi Masala,,741.00,39.00,77.00,30.00,70.00,9.00,9.00
+Mutton Biryani,Jeera Aloo,,714.00,36.80,77.00,27.70,68.30,5.20,3.20
+Mutton Biryani,Aloo Matar,,732.00,35.00,77.00,30.00,75.00,7.00,6.00
+Mutton Biryani,Aloo Dam,,726.00,35.00,78.00,30.00,74.00,6.00,7.00
+Mutton Biryani,Rogan Josh,,1016.00,63.00,198.00,55.00,54.00,4.00,4.00
+Mutton Biryani,Chicken Masala,,816.00,42.00,162.00,53.00,55.00,4.00,5.00
+Mutton Biryani,Tandoori Chicken,,826.00,44.00,192.00,56.00,52.00,3.00,4.00
+Mutton Biryani,Chicken Butte Masala,,896.00,49.00,199.00,53.00,59.00,5.00,7.00
+Mutton Biryani,Tangdi Kebab,,786.00,42.00,167.00,48.00,52.00,3.00,4.00
+Mutton Biryani,Chicken Korma,,904.00,50.50,199.00,51.80,58.50,3.80,6.60
+Mutton Biryani,Chicken Tikka Masala,,828.00,43.00,181.00,52.00,57.00,4.00,6.00
+Mutton Biryani,Chicken Curry,,857.00,44.00,176.00,56.00,58.00,4.00,7.00
+Mutton Biryani,Kadhai Chicken,,826.00,41.00,153.00,53.00,61.00,5.00,8.00
+Mutton Biryani,Murg Musallam,,914.00,45.00,218.00,72.00,55.00,3.00,6.00
+Mutton Biryani,Kudhi,,755.00,37.00,82.00,37.00,69.00,6.00,8.00
+Mutton Biryani,Kadhai Paneer,,776.00,45.00,112.00,33.00,60.00,5.00,8.00
+Mutton Biryani,Matar Paneer,,820.00,48.70,110.00,34.90,63.70,6.70,9.50
+Mutton Biryani,Malai Kofta,,816.00,43.00,115.00,36.00,72.00,6.00,6.00
+Mutton Biryani,Sahi Paneer,,826.00,51.00,142.00,34.00,58.00,4.00,7.00
+Mutton Biryani,Palak Paneer,,786.00,42.00,112.00,40.00,60.00,6.00,6.00
+Mutton Biryani,Paneer Bhurji,,803.00,49.00,122.00,35.00,55.00,4.00,5.00
+Mutton Biryani,Paneer Kofta,,816.00,45.00,127.00,32.00,70.00,4.00,6.00
+Mutton Biryani,Paneer Butter Masala,,820.00,50.00,137.00,34.00,59.00,4.00,7.00
+Mutton Biryani,Fish Curry,,786.00,42.00,137.00,50.00,53.00,4.00,4.00
+Mutton Biryani,Lemon Pepper Fish,,732.00,36.40,122.00,48.60,52.20,2.40,2.20
+Mutton Biryani,Prawn Curry,,726.00,35.00,287.00,50.00,55.00,4.00,5.00
+Mutton Biryani,Fish Tikka Masala,,852.00,48.00,169.00,45.00,58.00,4.00,7.00
+Mutton Biryani,Egg Curry,,736.00,42.00,452.00,37.00,55.00,3.00,5.00
+Mutton Biryani,Egg Masala,,781.00,46.00,404.00,37.00,54.00,3.00,5.00
+Mutton Biryani,Egg Bhurji,,713.00,41.00,404.00,35.00,51.00,2.60,3.00
+Mutton Biryani,Aam Chutney,,610.00,27.40,77.00,25.80,67.00,3.10,19.80
+Mutton Biryani,Coconut Chutney,,616.00,34.00,77.00,26.00,52.00,4.00,3.00
+Mutton Biryani,Rasam,,632.00,30.00,85.00,29.00,62.00,5.00,4.00
+Mutton Biryani,Raita,,656.00,31.00,92.00,34.00,60.00,3.00,13.00
+Mutton Biryani,Kachumber,,566.00,27.30,77.00,26.40,54.50,3.60,2.00
+Curd Rice,Aloo Gobi,,323.00,12.00,11.00,9.00,47.00,5.00,6.00
+Curd Rice,Veg Jhalfrezi,,278.00,9.00,11.00,11.00,41.00,6.00,9.00
+Curd Rice,Bhindi Bhaji,,255.00,10.50,11.00,8.50,34.00,4.00,5.50
+Curd Rice,Rajma ,,414.00,13.60,11.00,15.60,60.50,11.20,7.50
+Curd Rice,Dal Tadka,,383.00,12.00,11.00,16.00,56.00,9.00,5.00
+Curd Rice,Dal Makhani,,493.00,18.00,45.00,19.00,65.00,13.00,8.00
+Curd Rice,Sambar,,328.00,6.90,11.00,15.70,53.80,7.30,6.90
+Curd Rice,Chana Masala,,363.00,10.00,11.00,14.00,56.00,10.00,9.00
+Curd Rice,Chhola,,433.00,15.00,16.00,16.00,61.00,10.00,9.00
+Curd Rice,Palak with Potato,,343.00,12.00,11.00,10.00,51.00,5.00,5.00
+Curd Rice,Lauki Tamatar,,267.00,10.00,11.00,8.00,37.00,3.00,7.00
+Curd Rice,Bhindi Masala,,368.00,16.00,11.00,11.00,48.00,8.00,10.00
+Curd Rice,Jeera Aloo,,341.00,13.80,11.00,8.70,46.30,4.20,4.20
+Curd Rice,Aloo Matar,,359.00,12.00,11.00,11.00,53.00,6.00,7.00
+Curd Rice,Aloo Dam,,353.00,12.00,12.00,11.00,52.00,5.00,8.00
+Curd Rice,Rogan Josh,,643.00,40.00,132.00,36.00,32.00,3.00,5.00
+Curd Rice,Chicken Masala,,443.00,19.00,96.00,34.00,33.00,3.00,6.00
+Curd Rice,Tandoori Chicken,,453.00,21.00,126.00,37.00,30.00,2.00,5.00
+Curd Rice,Chicken Butte Masala,,523.00,26.00,133.00,34.00,37.00,4.00,8.00
+Curd Rice,Tangdi Kebab,,413.00,19.00,101.00,29.00,30.00,2.00,5.00
+Curd Rice,Chicken Korma,,531.00,27.50,133.00,32.80,36.50,2.80,7.60
+Curd Rice,Chicken Tikka Masala,,455.00,20.00,115.00,33.00,35.00,3.00,7.00
+Curd Rice,Chicken Curry,,484.00,21.00,110.00,37.00,36.00,3.00,8.00
+Curd Rice,Kadhai Chicken,,453.00,18.00,87.00,34.00,39.00,4.00,9.00
+Curd Rice,Murg Musallam,,541.00,22.00,152.00,53.00,33.00,2.00,7.00
+Curd Rice,Kudhi,,382.00,14.00,16.00,18.00,47.00,5.00,9.00
+Curd Rice,Kadhai Paneer,,403.00,22.00,46.00,14.00,38.00,4.00,9.00
+Curd Rice,Matar Paneer,,447.00,25.70,44.00,15.90,41.70,5.70,10.50
+Curd Rice,Malai Kofta,,443.00,20.00,49.00,17.00,50.00,5.00,7.00
+Curd Rice,Sahi Paneer,,453.00,28.00,76.00,15.00,36.00,3.00,8.00
+Curd Rice,Palak Paneer,,413.00,19.00,46.00,21.00,38.00,5.00,7.00
+Curd Rice,Paneer Bhurji,,430.00,26.00,56.00,16.00,33.00,3.00,6.00
+Curd Rice,Paneer Kofta,,443.00,22.00,61.00,13.00,48.00,3.00,7.00
+Curd Rice,Paneer Butter Masala,,447.00,27.00,71.00,15.00,37.00,3.00,8.00
+Curd Rice,Fish Curry,,413.00,19.00,71.00,31.00,31.00,3.00,5.00
+Curd Rice,Lemon Pepper Fish,,359.00,13.40,56.00,29.60,30.20,1.40,3.20
+Curd Rice,Prawn Curry,,353.00,12.00,221.00,31.00,33.00,3.00,6.00
+Curd Rice,Fish Tikka Masala,,479.00,25.00,103.00,26.00,36.00,3.00,8.00
+Curd Rice,Egg Curry,,363.00,19.00,386.00,18.00,33.00,2.00,6.00
+Curd Rice,Egg Masala,,408.00,23.00,338.00,18.00,32.00,2.00,6.00
+Curd Rice,Egg Bhurji,,340.00,18.00,338.00,16.00,29.00,1.60,4.00
+Curd Rice,Aam Chutney,,237.00,4.40,11.00,6.80,45.00,2.10,20.80
+Curd Rice,Coconut Chutney,,243.00,11.00,11.00,7.00,30.00,3.00,4.00
+Curd Rice,Rasam,,259.00,7.00,19.00,10.00,40.00,4.00,5.00
+Curd Rice,Raita,,283.00,8.00,26.00,15.00,38.00,2.00,14.00
+Curd Rice,Kachumber,,193.00,4.30,11.00,7.40,32.50,2.60,3.00
+Hyderbadi Egg Dum Biryani,Aloo Gobi,,722.00,26.00,268.00,25.00,101.00,10.00,12.00
+Hyderbadi Egg Dum Biryani,Veg Jhalfrezi,,677.00,23.00,268.00,27.00,95.00,11.00,15.00
+Hyderbadi Egg Dum Biryani,Bhindi Bhaji,,654.00,24.50,268.00,24.50,88.00,9.00,11.50
+Hyderbadi Egg Dum Biryani,Rajma ,,813.00,27.60,268.00,31.60,114.50,16.20,13.50
+Hyderbadi Egg Dum Biryani,Dal Tadka,,782.00,26.00,268.00,32.00,110.00,14.00,11.00
+Hyderbadi Egg Dum Biryani,Dal Makhani,,892.00,32.00,302.00,35.00,119.00,18.00,14.00
+Hyderbadi Egg Dum Biryani,Sambar,,727.00,20.90,268.00,31.70,107.80,12.30,12.90
+Hyderbadi Egg Dum Biryani,Chana Masala,,762.00,24.00,268.00,30.00,110.00,15.00,15.00
+Hyderbadi Egg Dum Biryani,Chhola,,832.00,29.00,273.00,32.00,115.00,15.00,15.00
+Hyderbadi Egg Dum Biryani,Palak with Potato,,742.00,26.00,268.00,26.00,105.00,10.00,11.00
+Hyderbadi Egg Dum Biryani,Lauki Tamatar,,666.00,24.00,268.00,24.00,91.00,8.00,13.00
+Hyderbadi Egg Dum Biryani,Bhindi Masala,,767.00,30.00,268.00,27.00,102.00,13.00,16.00
+Hyderbadi Egg Dum Biryani,Jeera Aloo,,740.00,27.80,268.00,24.70,100.30,9.20,10.20
+Hyderbadi Egg Dum Biryani,Aloo Matar,,758.00,26.00,268.00,27.00,107.00,11.00,13.00
+Hyderbadi Egg Dum Biryani,Aloo Dam,,752.00,26.00,269.00,27.00,106.00,10.00,14.00
+Hyderbadi Egg Dum Biryani,Rogan Josh,,1042.00,54.00,389.00,52.00,86.00,8.00,11.00
+Hyderbadi Egg Dum Biryani,Chicken Masala,,842.00,33.00,353.00,50.00,87.00,8.00,12.00
+Hyderbadi Egg Dum Biryani,Tandoori Chicken,,852.00,35.00,383.00,53.00,84.00,7.00,11.00
+Hyderbadi Egg Dum Biryani,Chicken Butte Masala,,922.00,40.00,390.00,50.00,91.00,9.00,14.00
+Hyderbadi Egg Dum Biryani,Tangdi Kebab,,812.00,33.00,358.00,45.00,84.00,7.00,11.00
+Hyderbadi Egg Dum Biryani,Chicken Korma,,930.00,41.50,390.00,48.80,90.50,7.80,13.60
+Hyderbadi Egg Dum Biryani,Chicken Tikka Masala,,854.00,34.00,372.00,49.00,89.00,8.00,13.00
+Hyderbadi Egg Dum Biryani,Chicken Curry,,883.00,35.00,367.00,53.00,90.00,8.00,14.00
+Hyderbadi Egg Dum Biryani,Kadhai Chicken,,852.00,32.00,344.00,50.00,93.00,9.00,15.00
+Hyderbadi Egg Dum Biryani,Murg Musallam,,940.00,36.00,409.00,69.00,87.00,7.00,13.00
+Hyderbadi Egg Dum Biryani,Kudhi,,781.00,28.00,273.00,34.00,101.00,10.00,15.00
+Hyderbadi Egg Dum Biryani,Kadhai Paneer,,802.00,36.00,303.00,30.00,92.00,9.00,15.00
+Hyderbadi Egg Dum Biryani,Matar Paneer,,846.00,39.70,301.00,31.90,95.70,10.70,16.50
+Hyderbadi Egg Dum Biryani,Malai Kofta,,842.00,34.00,306.00,33.00,104.00,10.00,13.00
+Hyderbadi Egg Dum Biryani,Sahi Paneer,,852.00,42.00,333.00,31.00,90.00,8.00,14.00
+Hyderbadi Egg Dum Biryani,Palak Paneer,,812.00,33.00,303.00,37.00,92.00,10.00,13.00
+Hyderbadi Egg Dum Biryani,Paneer Bhurji,,829.00,40.00,313.00,32.00,87.00,8.00,12.00
+Hyderbadi Egg Dum Biryani,Paneer Kofta,,842.00,36.00,318.00,29.00,102.00,8.00,13.00
+Hyderbadi Egg Dum Biryani,Paneer Butter Masala,,846.00,41.00,328.00,31.00,91.00,8.00,14.00
+Hyderbadi Egg Dum Biryani,Fish Curry,,812.00,33.00,328.00,47.00,85.00,8.00,11.00
+Hyderbadi Egg Dum Biryani,Lemon Pepper Fish,,758.00,27.40,313.00,45.60,84.20,6.40,9.20
+Hyderbadi Egg Dum Biryani,Prawn Curry,,752.00,26.00,478.00,47.00,87.00,8.00,12.00
+Hyderbadi Egg Dum Biryani,Fish Tikka Masala,,878.00,39.00,360.00,42.00,90.00,8.00,14.00
+Hyderbadi Egg Dum Biryani,Egg Curry,,762.00,33.00,643.00,34.00,87.00,7.00,12.00
+Hyderbadi Egg Dum Biryani,Egg Masala,,807.00,37.00,595.00,34.00,86.00,7.00,12.00
+Hyderbadi Egg Dum Biryani,Egg Bhurji,,739.00,32.00,595.00,32.00,83.00,6.60,10.00
+Hyderbadi Egg Dum Biryani,Aam Chutney,,636.00,18.40,268.00,22.80,99.00,7.10,26.80
+Hyderbadi Egg Dum Biryani,Coconut Chutney,,642.00,25.00,268.00,23.00,84.00,8.00,10.00
+Hyderbadi Egg Dum Biryani,Rasam,,658.00,21.00,276.00,26.00,94.00,9.00,11.00
+Hyderbadi Egg Dum Biryani,Raita,,682.00,22.00,283.00,31.00,92.00,7.00,20.00
+Hyderbadi Egg Dum Biryani,Kachumber,,592.00,18.30,268.00,23.40,86.50,7.60,9.00
+Egg Pulao,Aloo Gobi,,505.00,22.00,163.00,14.00,66.00,6.00,5.00
+Egg Pulao,Veg Jhalfrezi,,460.00,19.00,163.00,16.00,60.00,7.00,8.00
+Egg Pulao,Bhindi Bhaji,,437.00,20.50,163.00,13.50,53.00,5.00,4.50
+Egg Pulao,Rajma ,,596.00,23.60,163.00,20.60,79.50,12.20,6.50
+Egg Pulao,Dal Tadka,,565.00,22.00,163.00,21.00,75.00,10.00,4.00
+Egg Pulao,Dal Makhani,,675.00,28.00,197.00,24.00,84.00,14.00,7.00
+Egg Pulao,Sambar,,510.00,16.90,163.00,20.70,72.80,8.30,5.90
+Egg Pulao,Chana Masala,,545.00,20.00,163.00,19.00,75.00,11.00,8.00
+Egg Pulao,Chhola,,615.00,25.00,168.00,21.00,80.00,11.00,8.00
+Egg Pulao,Palak with Potato,,525.00,22.00,163.00,15.00,70.00,6.00,4.00
+Egg Pulao,Lauki Tamatar,,449.00,20.00,163.00,13.00,56.00,4.00,6.00
+Egg Pulao,Bhindi Masala,,550.00,26.00,163.00,16.00,67.00,9.00,9.00
+Egg Pulao,Jeera Aloo,,523.00,23.80,163.00,13.70,65.30,5.20,3.20
+Egg Pulao,Aloo Matar,,541.00,22.00,163.00,16.00,72.00,7.00,6.00
+Egg Pulao,Aloo Dam,,535.00,22.00,164.00,16.00,71.00,6.00,7.00
+Egg Pulao,Rogan Josh,,825.00,50.00,284.00,41.00,51.00,4.00,4.00
+Egg Pulao,Chicken Masala,,625.00,29.00,248.00,39.00,52.00,4.00,5.00
+Egg Pulao,Tandoori Chicken,,635.00,31.00,278.00,42.00,49.00,3.00,4.00
+Egg Pulao,Chicken Butte Masala,,705.00,36.00,285.00,39.00,56.00,5.00,7.00
+Egg Pulao,Tangdi Kebab,,595.00,29.00,253.00,34.00,49.00,3.00,4.00
+Egg Pulao,Chicken Korma,,713.00,37.50,285.00,37.80,55.50,3.80,6.60
+Egg Pulao,Chicken Tikka Masala,,637.00,30.00,267.00,38.00,54.00,4.00,6.00
+Egg Pulao,Chicken Curry,,666.00,31.00,262.00,42.00,55.00,4.00,7.00
+Egg Pulao,Kadhai Chicken,,635.00,28.00,239.00,39.00,58.00,5.00,8.00
+Egg Pulao,Murg Musallam,,723.00,32.00,304.00,58.00,52.00,3.00,6.00
+Egg Pulao,Kudhi,,564.00,24.00,168.00,23.00,66.00,6.00,8.00
+Egg Pulao,Kadhai Paneer,,585.00,32.00,198.00,19.00,57.00,5.00,8.00
+Egg Pulao,Matar Paneer,,629.00,35.70,196.00,20.90,60.70,6.70,9.50
+Egg Pulao,Malai Kofta,,625.00,30.00,201.00,22.00,69.00,6.00,6.00
+Egg Pulao,Sahi Paneer,,635.00,38.00,228.00,20.00,55.00,4.00,7.00
+Egg Pulao,Palak Paneer,,595.00,29.00,198.00,26.00,57.00,6.00,6.00
+Egg Pulao,Paneer Bhurji,,612.00,36.00,208.00,21.00,52.00,4.00,5.00
+Egg Pulao,Paneer Kofta,,625.00,32.00,213.00,18.00,67.00,4.00,6.00
+Egg Pulao,Paneer Butter Masala,,629.00,37.00,223.00,20.00,56.00,4.00,7.00
+Egg Pulao,Fish Curry,,595.00,29.00,223.00,36.00,50.00,4.00,4.00
+Egg Pulao,Lemon Pepper Fish,,541.00,23.40,208.00,34.60,49.20,2.40,2.20
+Egg Pulao,Prawn Curry,,535.00,22.00,373.00,36.00,52.00,4.00,5.00
+Egg Pulao,Fish Tikka Masala,,661.00,35.00,255.00,31.00,55.00,4.00,7.00
+Egg Pulao,Egg Curry,,545.00,29.00,538.00,23.00,52.00,3.00,5.00
+Egg Pulao,Egg Masala,,590.00,33.00,490.00,23.00,51.00,3.00,5.00
+Egg Pulao,Egg Bhurji,,522.00,28.00,490.00,21.00,48.00,2.60,3.00
+Egg Pulao,Aam Chutney,,419.00,14.40,163.00,11.80,64.00,3.10,19.80
+Egg Pulao,Coconut Chutney,,425.00,21.00,163.00,12.00,49.00,4.00,3.00
+Egg Pulao,Rasam,,441.00,17.00,171.00,15.00,59.00,5.00,4.00
+Egg Pulao,Raita,,465.00,18.00,178.00,20.00,57.00,3.00,13.00
+Egg Pulao,Kachumber,,375.00,14.30,163.00,12.40,51.50,3.60,2.00
+Egg Fried Rice,Aloo Gobi,,540.00,22.00,120.00,16.00,73.00,7.00,6.00
+Egg Fried Rice,Veg Jhalfrezi,,495.00,19.00,120.00,18.00,67.00,8.00,9.00
+Egg Fried Rice,Bhindi Bhaji,,472.00,20.50,120.00,15.50,60.00,6.00,5.50
+Egg Fried Rice,Rajma ,,631.00,23.60,120.00,22.60,86.50,13.20,7.50
+Egg Fried Rice,Dal Tadka,,600.00,22.00,120.00,23.00,82.00,11.00,5.00
+Egg Fried Rice,Dal Makhani,,710.00,28.00,154.00,26.00,91.00,15.00,8.00
+Egg Fried Rice,Sambar,,545.00,16.90,120.00,22.70,79.80,9.30,6.90
+Egg Fried Rice,Chana Masala,,580.00,20.00,120.00,21.00,82.00,12.00,9.00
+Egg Fried Rice,Chhola,,650.00,25.00,125.00,23.00,87.00,12.00,9.00
+Egg Fried Rice,Palak with Potato,,560.00,22.00,120.00,17.00,77.00,7.00,5.00
+Egg Fried Rice,Lauki Tamatar,,484.00,20.00,120.00,15.00,63.00,5.00,7.00
+Egg Fried Rice,Bhindi Masala,,585.00,26.00,120.00,18.00,74.00,10.00,10.00
+Egg Fried Rice,Jeera Aloo,,558.00,23.80,120.00,15.70,72.30,6.20,4.20
+Egg Fried Rice,Aloo Matar,,576.00,22.00,120.00,18.00,79.00,8.00,7.00
+Egg Fried Rice,Aloo Dam,,570.00,22.00,121.00,18.00,78.00,7.00,8.00
+Egg Fried Rice,Rogan Josh,,860.00,50.00,241.00,43.00,58.00,5.00,5.00
+Egg Fried Rice,Chicken Masala,,660.00,29.00,205.00,41.00,59.00,5.00,6.00
+Egg Fried Rice,Tandoori Chicken,,670.00,31.00,235.00,44.00,56.00,4.00,5.00
+Egg Fried Rice,Chicken Butte Masala,,740.00,36.00,242.00,41.00,63.00,6.00,8.00
+Egg Fried Rice,Tangdi Kebab,,630.00,29.00,210.00,36.00,56.00,4.00,5.00
+Egg Fried Rice,Chicken Korma,,748.00,37.50,242.00,39.80,62.50,4.80,7.60
+Egg Fried Rice,Chicken Tikka Masala,,672.00,30.00,224.00,40.00,61.00,5.00,7.00
+Egg Fried Rice,Chicken Curry,,701.00,31.00,219.00,44.00,62.00,5.00,8.00
+Egg Fried Rice,Kadhai Chicken,,670.00,28.00,196.00,41.00,65.00,6.00,9.00
+Egg Fried Rice,Murg Musallam,,758.00,32.00,261.00,60.00,59.00,4.00,7.00
+Egg Fried Rice,Kudhi,,599.00,24.00,125.00,25.00,73.00,7.00,9.00
+Egg Fried Rice,Kadhai Paneer,,620.00,32.00,155.00,21.00,64.00,6.00,9.00
+Egg Fried Rice,Matar Paneer,,664.00,35.70,153.00,22.90,67.70,7.70,10.50
+Egg Fried Rice,Malai Kofta,,660.00,30.00,158.00,24.00,76.00,7.00,7.00
+Egg Fried Rice,Sahi Paneer,,670.00,38.00,185.00,22.00,62.00,5.00,8.00
+Egg Fried Rice,Palak Paneer,,630.00,29.00,155.00,28.00,64.00,7.00,7.00
+Egg Fried Rice,Paneer Bhurji,,647.00,36.00,165.00,23.00,59.00,5.00,6.00
+Egg Fried Rice,Paneer Kofta,,660.00,32.00,170.00,20.00,74.00,5.00,7.00
+Egg Fried Rice,Paneer Butter Masala,,664.00,37.00,180.00,22.00,63.00,5.00,8.00
+Egg Fried Rice,Fish Curry,,630.00,29.00,180.00,38.00,57.00,5.00,5.00
+Egg Fried Rice,Lemon Pepper Fish,,576.00,23.40,165.00,36.60,56.20,3.40,3.20
+Egg Fried Rice,Prawn Curry,,570.00,22.00,330.00,38.00,59.00,5.00,6.00
+Egg Fried Rice,Fish Tikka Masala,,696.00,35.00,212.00,33.00,62.00,5.00,8.00
+Egg Fried Rice,Egg Curry,,580.00,29.00,495.00,25.00,59.00,4.00,6.00
+Egg Fried Rice,Egg Masala,,625.00,33.00,447.00,25.00,58.00,4.00,6.00
+Egg Fried Rice,Egg Bhurji,,557.00,28.00,447.00,23.00,55.00,3.60,4.00
+Egg Fried Rice,Aam Chutney,,454.00,14.40,120.00,13.80,71.00,4.10,20.80
+Egg Fried Rice,Coconut Chutney,,460.00,21.00,120.00,14.00,56.00,5.00,4.00
+Egg Fried Rice,Rasam,,476.00,17.00,128.00,17.00,66.00,6.00,5.00
+Egg Fried Rice,Raita,,500.00,18.00,135.00,22.00,64.00,4.00,14.00
+Egg Fried Rice,Kachumber,,410.00,14.30,120.00,14.40,58.50,4.60,3.00
