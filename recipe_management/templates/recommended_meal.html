@@ -4,31 +4,27 @@
 	<title>Recommended Meals</title>
 </head>
 <body>
-	<h1>Recommended Meals</h1>
-	{% if recommended_meals %}
-		{% for meal in recommended_meals %}
+	<h1>Weekly Meals</h1>
+	{% if weekly_meals %}
+		{% for meal in weekly_meals %}
 			<h2>Day {{ forloop.counter }}</h2>
-      <h3> Breakfast </h3>
-			<ul>
-					<li>{{ meal.0 }}</li>
-          <l1>{{ meal.1 }}</l1>
-          <l1>{{ meal.2 }}</l1>
-			</ul>
-      <h3> Lunch </h3>
-			<ul>
-					<li>{{ meal.3 }}</li>
-          <l1>{{ meal.4 }}</l1>
-          <l1>{{ meal.5 }}</l1>
-			</ul>
-      <h3> Dinner </h3>
-			<ul>
-					<li>{{ meal.6 }}</li>
-          <l1>{{ meal.7 }}</l1>
-          <l1>{{ meal.8 }}</l1>
-			</ul>
+			<h3>Breakfast</h3>
+			<p>Food 1: {{ meal.breakfast_food1 }}</p>
+			<p>Food 2: {{ meal.breakfast_food2 }}</p>
+			<p>Food 3: {{ meal.breakfast_food3 }}</p>
+			<h3>Lunch</h3>
+			<p>Food 1: {{ meal.lunch_food1 }}</p>
+			<p>Food 2: {{ meal.lunch_food2 }}</p>
+			<p>Food 3: {{ meal.lunch_food3 }}</p>
+			<h3>Dinner</h3>
+			<p>Food 1: {{ meal.dinner_food1 }}</p>
+			<p>Food 2: {{ meal.dinner_food2 }}</p>
+			<p>Food 3: {{ meal.dinner_food3 }}</p>
+			<h3>Nutrients</h3>
+			<p>Combined Nutrients: {{ meal.nutrients }}</p>
 		{% endfor %}
 	{% else %}
-		<p>No meals found within specified parameters.</p>
+		<p>No weekly meals found.</p>
 	{% endif %}
 </body>
 </html>
