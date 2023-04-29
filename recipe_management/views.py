@@ -1,26 +1,18 @@
 from django.shortcuts import render
-# from django.contrib.auth import get_user_model
 from user_management.models import Profile
 from .models import Breakfast_meal, Lunch_meal, Dinner_meal
 from .models import BreakfastMealFeedback, LunchMealFeedback, DinnerMealFeedback
 import random
 from django.db.models import Q
 
-# import itertools
-# Create your views here.
-
-# class Profile_limit:
-#     def __init__(self, user):
-#         self.user = user
-
-#         self.max_calorie = (10 * self.user.weight) + (6.25 * self.user.height) - (5 * self.user.age) + 5
-
-
 def generate_recommendation(request):
 
+    # get user profile
     if not request.user.is_authenticated:
         return render(request, "login.html")
     user_profile = Profile.objects.get(user = request.user)
+
+    # start caluclating maximum limit for every nutrients user should have
     BMR = float((10 * user_profile.weight)) + (6.25 * float(user_profile.height)) - (5 * user_profile.age)
     
     max_calories = (BMR * float(user_profile.physical_activity))
@@ -51,18 +43,6 @@ def generate_recommendation(request):
     max_sugars = (max_calories * 0.1)/4
     max_fiber = 25
 
-    # slice the first 5 meals from the generator and convert them to a list
-    # recommended_meals_list = list(itertools.islice(recommended_meal, 7))
-
-    # print(recommended_meals_list)
-    # # create a context dictionary to pass the data to the template
-    # context = {'recommended_meals': recommended_meals_list}
-
-    # # render the template with the context dictionary
-    # return render(request, 'recommended_meal.html', context)
-
-    # return  render(request, "recommended_meal.html", context)
-
     breakfast_options = Breakfast_meal.objects.all()
     lunch_options = Lunch_meal.objects.all()
     dinner_options = Dinner_meal.objects.all()
@@ -81,10 +61,12 @@ def generate_recommendation(request):
     #     Q(proteins__lte=max_protein) 
     # )
 
+    # check if user likes or dikslikes any meal option
     user_breakfast_likes = BreakfastMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
     user_lunch_likes = LunchMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
     user_dinner_likes = DinnerMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
 
+    # if dislike remove it from consideration
     for user_like in user_breakfast_likes:
         if user_like.like == False:
             meal_options = meal_options.exclude(id=user_like.breakfast_meal.id)
@@ -97,9 +79,13 @@ def generate_recommendation(request):
         if user_like.like == False:
             meal_options = meal_options.exclude(id=user_like.dinner_meal.id)
 
+    # weekly meals list
     weekly_meals = []
+
+    # getting 7 random meal set for all three options
     for _ in range(7):
 
+        # choose any random meal option
         breakfast = random.choice(breakfast_options)
         lunch = random.choice(lunch_options)
         dinner = random.choice(dinner_options)
@@ -118,7 +104,8 @@ def generate_recommendation(request):
         # Check if the combined nutrient values exceed user's maximum nutrient values
         if combined_nutrients['Total_Calories'] > max_calories and combined_nutrients['Total_Fat'] > max_total_fat and \
             combined_nutrients['Total_Carbohydrate'] > max_carbohydrates and combined_nutrients['Total_Sugars'] > max_sugars and \
-            combined_nutrients['Total_Cholesterol'] > max_cholesterol and combined_nutrients['Total_Proteins'] > max_protein:
+            combined_nutrients['Total_Cholesterol'] > max_cholesterol and combined_nutrients['Total_Proteins'] > max_protein and \
+            combined_nutrients['Total_Fiber'] > max_fiber:
             # If the combined nutrient values exceed user's maximum nutrient values, skip this combination
             continue
 
@@ -136,6 +123,7 @@ def generate_recommendation(request):
             'nutrients': combined_nutrients,
         })
 
+    # sort all weekly meal in the context
     context = {'weekly_meals' : weekly_meals}
 
     return render(request, 'recommended_meal.html', context)

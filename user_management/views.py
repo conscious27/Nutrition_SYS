@@ -3,24 +3,31 @@ from django.shortcuts import render, redirect
 # Create your views here.
 from .forms import UserProfileForm
 from .forms import SignUpForm
-from django.http import HttpResponseRedirect, HttpResponseBadRequest
+from django.http import HttpResponseBadRequest
 from django.contrib.auth.decorators import login_required
 
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 
+# get current user
 User = get_user_model()
 
+# if login else open login.html page
 @login_required
 def home(request):
     user = request.user
+
+    # if user is invalid 
     if not isinstance(user, User):
         return HttpResponseBadRequest('Invalid user')
+    
+    # if user's profile is valid create new profile button will change into edit profile
     if hasattr(user, 'profile'):
         button_text = 'Edit Profile'
     else:
         button_text = 'Create New Profile'
+
     if request.method == 'POST':
         profile_form = UserProfileForm(request.POST)
         if profile_form.is_valid():
@@ -33,6 +40,7 @@ def home(request):
     return render(request, 'base.html', {'button_text':button_text, 'profile_form':profile_form})
     # return render(request, 'base.html')
 
+# form for sign up and create an account for user
 def signup_views(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -50,6 +58,7 @@ def signup_views(request):
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
 
+# if username and password match authenticate the user
 def login_views(request):
     if request.method == 'POST':
         username = request.POST.get('username')
