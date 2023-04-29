@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from user_management.models import Profile
-from .models import Breakfast_meal, Lunch_meal, Dinner_meal
+from .models import Breakfast_meal, Lunch_meal, Dinner_meal, FoodItem
 from .models import BreakfastMealFeedback, LunchMealFeedback, DinnerMealFeedback
 import random
 from django.db.models import Q
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponseBadRequest, HttpResponseNotFound, JsonResponse
 
 def generate_recommendation(request):
 
@@ -47,48 +49,110 @@ def generate_recommendation(request):
     lunch_options = Lunch_meal.objects.all()
     dinner_options = Dinner_meal.objects.all()
 
-    # Combine all meal options into one list
-    meal_options = list(breakfast_options) + list(lunch_options) + list(dinner_options)
+    # # check if user likes or dikslikes any meal option
+    # user_breakfast_likes = BreakfastMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    # user_lunch_likes = LunchMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    # user_dinner_likes = DinnerMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
 
-    # Filter out meal options that exceed user's maximum nutrient values
-    # meal_options = meal_options.filter(
-    #     Q(calories__lte=max_calories) &
-    #     Q(total_fat__lte=max_total_fat) &
-    #     Q(carbohydrate__lte=max_carbohydrates) &
-    #     Q(fiber__lte=max_fiber) &
-    #     Q(sugars__lte=max_sugars) &
-    #     Q(cholesterol__lte=max_cholesterol) &
-    #     Q(proteins__lte=max_protein) 
-    # )
+    # # if dislike remove it from consideration
+    # for user_like in user_breakfast_likes:
+    #     if user_like.like == False:
+    #         breakfast_options = breakfast_options.exclude(id=user_like.breakfast_meal.id)
 
-    # check if user likes or dikslikes any meal option
-    user_breakfast_likes = BreakfastMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
-    user_lunch_likes = LunchMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
-    user_dinner_likes = DinnerMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    # for user_like in user_lunch_likes:
+    #     if user_like.like == False:
+    #         lunch_options = lunch_options.exclude(id=user_like.lunch_meal.id)
 
-    # if dislike remove it from consideration
-    for user_like in user_breakfast_likes:
-        if user_like.like == False:
-            meal_options = meal_options.exclude(id=user_like.breakfast_meal.id)
+    # for user_like in user_dinner_likes:
+    #     if user_like.like == False:
+    #         dinner_options = dinner_options.exclude(id=user_like.dinner_meal.id)
 
-    for user_like in user_lunch_likes:
-        if user_like.like == False:
-            meal_options = meal_options.exclude(id=user_like.lunch_meal.id)
+    # check meal score if negative remove it from consideration
 
-    for user_like in user_dinner_likes:
-        if user_like.like == False:
-            meal_options = meal_options.exclude(id=user_like.dinner_meal.id)
+    for breakfast in breakfast_options:
+        if breakfast.score < 0:
+            breakfast_options = breakfast_options.exclude(id=breakfast.id)
 
-    # weekly meals list
+    for lunch in lunch_options:
+        if lunch.score < 0:
+            lunch_options = lunch_options.exclude(id=lunch.id)
+
+    for dinner in lunch_options:
+        if dinner.score < 0:
+            dinner_options = dinner_options.exclude(id=dinner.id)
+
+    foods = FoodItem.objects.all()
+
+    # if user is not allowed remove from consideration
+    for meal in breakfast_options:
+        meal_food1 = meal.food1
+        meal_food2 = meal.food2
+        meal_food3 = meal.food3
+        for food in foods:
+            if food.name == meal_food1 or food.name == meal_food2 or food.name == meal_food3:
+                if food.category1 == user_profile.dietary_restriction or food.category2 == user_profile.dietary_restriction:
+                    breakfast_options = breakfast_options.exclude(food1=food.name)
+                    breakfast_options = breakfast_options.exclude(food2=food.name)
+                    breakfast_options = breakfast_options.exclude(food3=food.name)
+
+    for meal in lunch_options:
+        meal_food1 = meal.food1
+        meal_food2 = meal.food2
+        meal_food3 = meal_food3
+        for food in foods:
+            if food.name == meal_food1 or food.name == meal_food2 or food.name == meal_food3:
+                if food.category1 == user_profile.dietary_restriction or food.category2 == user_profile.dietary_restriction:
+                    lunch_options = lunch_options.exclude(food1=food.name)
+                    lunch_options = lunch_options.exclude(food2=food.name)
+                    lunch_options = lunch_options.exclude(food3=food.name)
+
+    for meal in dinner_options:
+        meal_food1 = meal.food1
+        meal_food2 = meal.food2
+        meal_food3 = meal_food3
+        for food in foods:
+            if food.name == meal_food1 or food.name == meal_food2 or food.name == meal_food3:
+                if food.category1 == user_profile.dietary_restriction or food.category2 == user_profile.dietary_restriction:
+                    dinner_options = dinner_options.exclude(food1=food.name)
+                    dinner_options = dinner_options.exclude(food2=food.name)
+                    dinner_options = dinner_options.exclude(food3=food.name)
+
+    # get top 3 highest scoring meal options for each meal type
+    top_breakfast_options = list(breakfast_options.order_by('-score')[:3])
+    top_lunch_options = list(lunch_options.order_by('-score')[:3])
+    top_dinner_options = list(dinner_options.order_by('-score')[:3])
+
+
+    # check if any top 3 options have score=0, if yes, choose all random meals
+    if any(option.score == 0 for option in top_breakfast_options):
+        top_breakfast_options = []
+
+    if any(option.score == 0 for option in top_lunch_options):
+        top_lunch_options = []
+    
+    if any(option.score == 0 for option in top_dinner_options):
+        top_dinner_options = []
+
+    # randomly choose 4 other meal options for each meal type
+    other_breakfast_options = list(breakfast_options.exclude(id__in=[option.id for option in top_breakfast_options]))
+    random_breakfast_options = random.sample(other_breakfast_options, k=min(4, len(other_breakfast_options)))
+
+    other_lunch_options = list(lunch_options.exclude(id__in=[option.id for option in top_lunch_options]))
+    random_lunch_options = random.sample(other_lunch_options, k=min(4, len(other_lunch_options)))
+
+    other_dinner_options = list(dinner_options.exclude(id__in=[option.id for option in top_dinner_options]))
+    random_dinner_options = random.sample(other_dinner_options, k=min(4, len(other_dinner_options)))
+
+    # weekly mdinner
     weekly_meals = []
 
     # getting 7 random meal set for all three options
     for _ in range(7):
 
         # choose any random meal option
-        breakfast = random.choice(breakfast_options)
-        lunch = random.choice(lunch_options)
-        dinner = random.choice(dinner_options)
+        breakfast = random.choice(top_breakfast_options + random_breakfast_options) if top_breakfast_options else random.choice(random_breakfast_options)
+        lunch = random.choice(top_lunch_options + random_lunch_options) if top_lunch_options else random.choice(random_lunch_options)
+        dinner = random.choice(top_dinner_options + random_dinner_options) if top_dinner_options else random.choice(random_dinner_options)
 
         # Combine the nutrient values of all three meals
         combined_nutrients = {
@@ -127,3 +191,30 @@ def generate_recommendation(request):
     context = {'weekly_meals' : weekly_meals}
 
     return render(request, 'recommended_meal.html', context)
+
+# @csrf_exempt
+# def dislike_meal(request, meal_id):
+#     if request.method != 'POST':
+#         return HttpResponseBadRequest('Only POST request are allowed.')
+    
+#     try:
+#         meal = Breakfast_meal.objects.get(id=meal_id)
+#     except Breakfast_meal.DoesNotExist:
+#         return HttpResponseBadRequest('Meal not found.')
+    
+
+#     # Update the meal score
+#     meal.score -= 1
+#     meal.save()
+
+#     return JsonResponse({'success' : True})
+
+def display_recipe(request, recipe_name):
+    try:
+        with open(f"static/recipe/{recipe_name}.txt", "r") as recipe_file:
+            recipe_text = recipe_file.read()
+    except FileNotFoundError:
+        return HttpResponseNotFound("Recipe not found")
+
+    context = {"recipe_text": recipe_text}
+    return render(request, "recipe.html", context)

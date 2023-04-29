@@ -28,6 +28,7 @@ class Breakfast_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
+    score = models.IntegerField(default=0)
 
 class Lunch_meal(models.Model):
     food1 = models.CharField(max_length=200)
@@ -40,6 +41,7 @@ class Lunch_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
+    score = models.IntegerField(default=0)
 
 class Dinner_meal(models.Model):
     food1 = models.CharField(max_length=200)
@@ -52,6 +54,7 @@ class Dinner_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
+    score = models.IntegerField(default=0)
 
 
 class Day_meal(models.Model):
