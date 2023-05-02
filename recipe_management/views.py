@@ -5,7 +5,7 @@ from .models import BreakfastMealFeedback, LunchMealFeedback, DinnerMealFeedback
 import random
 from django.db.models import Q
 from django.views.decorators.csrf import csrf_exempt
-from django.http import HttpResponseBadRequest, HttpResponseNotFound, JsonResponse
+from django.http import HttpResponseNotFound, HttpResponse
 
 def generate_recommendation(request):
 
@@ -49,42 +49,43 @@ def generate_recommendation(request):
     lunch_options = Lunch_meal.objects.all()
     dinner_options = Dinner_meal.objects.all()
 
-    # # check if user likes or dikslikes any meal option
-    # user_breakfast_likes = BreakfastMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
-    # user_lunch_likes = LunchMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
-    # user_dinner_likes = DinnerMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    # check if user likes or dikslikes any meal option
+    user_breakfast_likes = BreakfastMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    user_lunch_likes = LunchMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
+    user_dinner_likes = DinnerMealFeedback.objects.filter(Q(like=True) | Q(dislike=True), user=user_profile.user)
 
-    # # if dislike remove it from consideration
-    # for user_like in user_breakfast_likes:
-    #     if user_like.like == False:
-    #         breakfast_options = breakfast_options.exclude(id=user_like.breakfast_meal.id)
+    # update score on each models
+    
 
-    # for user_like in user_lunch_likes:
-    #     if user_like.like == False:
-    #         lunch_options = lunch_options.exclude(id=user_like.lunch_meal.id)
+    # if dislike remove it from consideration
+    for user_like in user_breakfast_likes:
+        if user_like.like == False:
+            breakfast_options = breakfast_options.exclude(id=user_like.breakfast_meal.id)
 
-    # for user_like in user_dinner_likes:
-    #     if user_like.like == False:
-    #         dinner_options = dinner_options.exclude(id=user_like.dinner_meal.id)
+    for user_like in user_lunch_likes:
+        if user_like.like == False:
+            lunch_options = lunch_options.exclude(id=user_like.lunch_meal.id)
 
-    # check meal score if negative remove it from consideration
-
-    for breakfast in breakfast_options:
-        if breakfast.score < 0:
-            breakfast_options = breakfast_options.exclude(id=breakfast.id)
-
-    for lunch in lunch_options:
-        if lunch.score < 0:
-            lunch_options = lunch_options.exclude(id=lunch.id)
-
-    for dinner in lunch_options:
-        if dinner.score < 0:
-            dinner_options = dinner_options.exclude(id=dinner.id)
+    for user_like in user_dinner_likes:
+        if user_like.like == False:
+            dinner_options = dinner_options.exclude(id=user_like.dinner_meal.id)
 
     foods = FoodItem.objects.all()
 
+    # get food based on other similar user
+    user_similarity_index= {}
+    user_similarity_index = update_meal_scores(user_profile)
+
     # if user is not allowed remove from consideration
+    # also updates the average score of each meal based on collaborative filtering
     for meal in breakfast_options:
+        meal_id = meal.id
+        if user_similarity_index is not None:
+            for usi in user_similarity_index.values():
+                if (meal_id, 'breakfast') in usi.keys():
+                    meal.score = usi[(meal_id, 'breakfast')]['avg_score']
+
+
         meal_food1 = meal.food1
         meal_food2 = meal.food2
         meal_food3 = meal.food3
@@ -96,6 +97,13 @@ def generate_recommendation(request):
                     breakfast_options = breakfast_options.exclude(food3=food.name)
 
     for meal in lunch_options:
+
+        meal_id = meal.id
+        if user_similarity_index is not None:
+            for usi in user_similarity_index.values():
+                if (meal_id, 'lunch') in usi.keys():
+                    meal.score = usi[(meal_id, 'breakfast')]['avg_score']
+
         meal_food1 = meal.food1
         meal_food2 = meal.food2
         meal_food3 = meal_food3
@@ -107,6 +115,13 @@ def generate_recommendation(request):
                     lunch_options = lunch_options.exclude(food3=food.name)
 
     for meal in dinner_options:
+
+        meal_id = meal.id
+        if user_similarity_index is not None:
+            for usi in user_similarity_index.values():
+                if (meal_id, 'dinner') in usi.keys():
+                    meal.score = usi[(meal_id, 'breakfast')]['avg_score']
+
         meal_food1 = meal.food1
         meal_food2 = meal.food2
         meal_food3 = meal_food3
@@ -117,6 +132,7 @@ def generate_recommendation(request):
                     dinner_options = dinner_options.exclude(food2=food.name)
                     dinner_options = dinner_options.exclude(food3=food.name)
 
+    
     # get top 3 highest scoring meal options for each meal type
     top_breakfast_options = list(breakfast_options.order_by('-score')[:3])
     top_lunch_options = list(lunch_options.order_by('-score')[:3])
@@ -150,9 +166,9 @@ def generate_recommendation(request):
     for _ in range(7):
 
         # choose any random meal option
-        breakfast = random.choice(top_breakfast_options + random_breakfast_options) if top_breakfast_options else random.choice(random_breakfast_options)
-        lunch = random.choice(top_lunch_options + random_lunch_options) if top_lunch_options else random.choice(random_lunch_options)
-        dinner = random.choice(top_dinner_options + random_dinner_options) if top_dinner_options else random.choice(random_dinner_options)
+        breakfast = random.choice(random_breakfast_options)
+        lunch =  random.choice(random_lunch_options)
+        dinner =  random.choice(random_dinner_options)
 
         # Combine the nutrient values of all three meals
         combined_nutrients = {
@@ -175,12 +191,15 @@ def generate_recommendation(request):
 
         # Append the selected meals to weekly meals list
         weekly_meals.append({
+            'breakfast_id' : breakfast.id,
             'breakfast_food1': breakfast.food1,
             'breakfast_food2': breakfast.food2,
             'breakfast_food3': breakfast.food3,
+            'lunch_id' : lunch.id,
             'lunch_food1': lunch.food1,
             'lunch_food2': lunch.food2,
             'lunch_food3': lunch.food3,
+            'dinner_id' : dinner.id,
             'dinner_food1': dinner.food1,
             'dinner_food2': dinner.food2,
             'dinner_food3': dinner.food3,
@@ -192,22 +211,101 @@ def generate_recommendation(request):
 
     return render(request, 'recommended_meal.html', context)
 
-# @csrf_exempt
-# def dislike_meal(request, meal_id):
-#     if request.method != 'POST':
-#         return HttpResponseBadRequest('Only POST request are allowed.')
-    
-#     try:
-#         meal = Breakfast_meal.objects.get(id=meal_id)
-#     except Breakfast_meal.DoesNotExist:
-#         return HttpResponseBadRequest('Meal not found.')
-    
 
-#     # Update the meal score
-#     meal.score -= 1
-#     meal.save()
+def update_meal_scores(user_profile):
+    # get all meal feedback from other users
+    breakfast_feedback = BreakfastMealFeedback.objects.exclude(user=user_profile.user)
+    lunch_feedback = LunchMealFeedback.objects.exclude(user=user_profile.user)
+    dinner_feedback = DinnerMealFeedback.objects.exclude(user=user_profile.user)
 
-#     return JsonResponse({'success' : True})
+    # calculate similarity between users based on meal feedback
+    similarity = {}
+    for feedback in breakfast_feedback:
+        other_user = feedback.user
+        if other_user.id not in similarity:
+            similarity[other_user.id] = 0
+        if feedback.like:
+            similarity[other_user.id] += 1
+        elif feedback.dislike:
+            similarity[other_user.id] -= 1
+    for feedback in lunch_feedback:
+        other_user = feedback.user
+        if other_user.id not in similarity:
+            similarity[other_user.id] = 0
+        if feedback.like:
+            similarity[other_user.id] += 1
+        elif feedback.dislike:
+            similarity[other_user.id] -= 1
+    for feedback in dinner_feedback:
+        other_user = feedback.user
+        if other_user.id not in similarity:
+            similarity[other_user.id] = 0
+        if feedback.like:
+            similarity[other_user.id] += 1
+        elif feedback.dislike:
+            similarity[other_user.id] -= 1
+
+    # sort users by similarity and choose top k similar users
+    k = 5
+    # choose top k similar users who have at least 1 similar meal feedback
+    similar_users = [user_id for user_id in similarity.keys() if similarity[user_id] > 0]
+    similar_users = sorted(similar_users, key=lambda x: similarity[x], reverse=True)[:k]
+
+    # get meal feedback from top similar users
+    similar_breakfast_feedback = BreakfastMealFeedback.objects.filter(user__in=similar_users)
+    similar_lunch_feedback = LunchMealFeedback.objects.filter(user__in=similar_users)
+    similar_dinner_feedback = DinnerMealFeedback.objects.filter(user__in=similar_users)
+
+    # calculate average feedback score for each meal
+    meal_scores = {}
+    for feedback in similar_breakfast_feedback:
+        meal = feedback.meal
+        if meal.id not in meal_scores:
+            meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'breakfast'}
+        if feedback.like:
+            meal_scores[meal.id]['likes'] += 1
+        elif feedback.dislike:
+            meal_scores[meal.id]['dislikes'] += 1
+        meal_scores[meal.id]['count'] += 1
+        meal_scores[meal.id]['type'] = 'breakfast'
+
+    for feedback in similar_lunch_feedback:
+        meal = feedback.meal
+        if meal.id not in meal_scores:
+            meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'lunch'}
+        if feedback.like:
+            meal_scores[meal.id]['likes'] += 1
+        elif feedback.dislike:
+            meal_scores[meal.id]['dislikes'] +=1
+        meal_scores[meal.id]['count'] += 1
+        meal_scores[meal.id]['type'] = 'lunch'
+
+    for feedback in similar_dinner_feedback:
+        meal = feedback.meal
+        if meal.id not in meal_scores:
+            meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'dinner'}
+        if feedback.like:
+            meal_scores[meal.id]['likes'] += 1
+        elif feedback.dislike:
+            meal_scores[meal.id]['dislikes'] +=1
+        meal_scores[meal.id]['count'] += 1
+        meal_scores[meal.id]['type'] = 'dinner'
+
+    user_similarity_index = {}
+    # calculate average meal score
+    for meal_id in meal_scores.keys():
+        likes = meal_scores[meal_id]['likes']
+        dislikes = meal_scores[meal_id]['dislikes']
+        count = meal_scores[meal_id]['count']
+        if count > 0:
+            avg_score = (likes - dislikes) / count
+        else:
+            avg_score = 0
+
+        user_similarity_index[(meal_id, meal_scores[meal_id]['type'])] = {'avg_score': avg_score}
+
+        return user_similarity_index
+
 
 def display_recipe(request, recipe_name):
     try:
@@ -218,3 +316,59 @@ def display_recipe(request, recipe_name):
 
     context = {"recipe_text": recipe_text}
     return render(request, "recipe.html", context)
+
+@csrf_exempt
+def like_meal(request, id, type):
+    if request.method == 'POST':
+        meal_id = id
+        user = request.user
+
+        if type == 'breakfast':
+            feedback = BreakfastMealFeedback.objects.get_or_create(user=user, breakfast_meal_id=meal_id)[0]
+            feedback.like = True
+            feedback.dislike = False
+            feedback.save()
+            return HttpResponse(status=200)
+        
+        if type == 'lunch':
+            feedback = LunchMealFeedback.objects.get_or_create(user=user, lunch_meal_id=meal_id)[0]
+            feedback.like = True
+            feedback.dislike = False
+            feedback.save()
+            return HttpResponse(status=200)
+        
+        if type == 'dinner':
+            feedback = DinnerMealFeedback.objects.get_or_create(user=user, dinner_meal_id=meal_id)[0]
+            feedback.like = True
+            feedback.dislike = False
+            feedback.save()
+            return HttpResponse(status=200)
+    return HttpResponse(status=400)
+
+@csrf_exempt
+def dislike_meal(request, id, type):
+    if request.method == 'POST':
+        meal_id = id
+        user = request.user
+
+        if type == 'breakfast':
+            feedback = BreakfastMealFeedback.objects.get_or_create(user=user, breakfast_meal_id=meal_id)[0]
+            feedback.like = False
+            feedback.dislike = True
+            feedback.save()
+            return HttpResponse(status=200)
+        
+        if type == 'lunch':
+            feedback = LunchMealFeedback.objects.get_or_create(user=user, lunch_meal_id=meal_id)[0]
+            feedback.like = False
+            feedback.dislike = True
+            feedback.save()
+            return HttpResponse(status=200)
+        
+        if type == 'dinner':
+            feedback = DinnerMealFeedback.objects.get_or_create(user=user, dinner_meal_id=meal_id)[0]
+            feedback.like = False
+            feedback.dislike = True
+            feedback.save()
+            return HttpResponse(status=200)
+    return HttpResponse(status=400)

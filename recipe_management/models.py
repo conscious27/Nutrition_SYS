@@ -28,7 +28,7 @@ class Breakfast_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
-    score = models.IntegerField(default=0)
+    score = models.FloatField(default=0)
 
 class Lunch_meal(models.Model):
     food1 = models.CharField(max_length=200)
@@ -41,7 +41,7 @@ class Lunch_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
-    score = models.IntegerField(default=0)
+    score = models.FloatField(default=0)
 
 class Dinner_meal(models.Model):
     food1 = models.CharField(max_length=200)
@@ -54,26 +54,7 @@ class Dinner_meal(models.Model):
     carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
     fiber = models.DecimalField(max_digits=6, decimal_places=2)
     sugars = models.DecimalField(max_digits=6, decimal_places=2)
-    score = models.IntegerField(default=0)
-
-
-class Day_meal(models.Model):
-    breakfast_food1 = models.CharField(max_length=200)
-    breakfast_food2 = models.CharField(max_length=200)
-    breakfast_food3 = models.CharField(max_length=200)
-    lunch_food1 = models.CharField(max_length=200)
-    lunch_food2 = models.CharField(max_length=200)
-    lunch_food3 = models.CharField(max_length=200)
-    dinner_food1 = models.CharField(max_length=200)
-    dinner_food2 = models.CharField(max_length=200)
-    dinner_food3 = models.CharField(max_length=200)
-    total_calories = models.DecimalField(max_digits=6, decimal_places=2)
-    total_fat = models.DecimalField(max_digits=5, decimal_places=2)
-    total_cholesterol = models.DecimalField(max_digits=6, decimal_places=2)
-    total_protein = models.DecimalField(max_digits=6, decimal_places=2)
-    total_carbohydrates = models.DecimalField(max_digits=6, decimal_places=2)
-    total_fiber = models.DecimalField(max_digits=6, decimal_places=2)
-    total_sugars = models.DecimalField(max_digits=6, decimal_places=2)
+    score = models.FloatField(default=0)
 
 class BreakfastMealFeedback(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -92,3 +73,4 @@ class DinnerMealFeedback(models.Model):
     dinner_meal = models.ForeignKey(Dinner_meal, on_delete=models.CASCADE)
     like = models.BooleanField(default=False)
     dislike = models.BooleanField(default=False)
+
