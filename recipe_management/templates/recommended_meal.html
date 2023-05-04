@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Meals</title>
+    <script>
+		function likeMeal(id, type) {
+			// Send a POST request to the server to update the meal score
+			fetch(`like_meal/${id}/${type}/`, {method: 'POST'})
+				.then(response => {
+					if (response.ok) {
+						//update the button color
+						var button = document.getElementById('like-button-' + id)
+						button.style.backgroundColor = 'green';
+					}
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		}
+
+		function dislikeMeal(id, type) {
+			// Send a POST request to the server to update the meal score
+			fetch(`dislike_meal/${id}/${type}/`, {method: 'POST'})
+				.then(response => {
+					if (response.ok) {
+						//update the button color
+						var button = document.getElementById('dislike-button-' + id)
+						button.style.backgroundColor = 'red';
+					}
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		}
+    </script>
+</head>
+<body>
+    <h1>Weekly Meals</h1>
+    {% if weekly_meals %}
+        {% for meal in weekly_meals %}
+            <h2>Day {{ forloop.counter }}</h2>
+            <h3>Breakfast</h3>
+            <p>Food 1: {% if meal.breakfast_food1 %}<a href="{% url 'display_recipe' recipe_name=meal.breakfast_food1 %}">{{ meal.breakfast_food1 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 2: {% if meal.breakfast_food2 %}<a href="{% url 'display_recipe' recipe_name=meal.breakfast_food2 %}">{{ meal.breakfast_food2 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 3: {% if meal.breakfast_food3 %}<a href="{% url 'display_recipe' recipe_name=meal.breakfast_food3 %}">{{ meal.breakfast_food3 }}</a>{% else %}N/A{% endif %}</p>
+			<button id="like-button-{{ meal.breakfast_id }}" onclick="likeMeal({{meal.breakfast_id}}, 'breakfast' )">Like</button>
+			<button id="dislike-button-{{ meal.breakfast_id }}" onclick="dislikeMeal( {{meal.breakfast_id}}, 'breakfast' )">Dislike</button>
+            <h3>Lunch</h3>
+            <p>Food 1: {% if meal.lunch_food1 %}<a href="{% url 'display_recipe' recipe_name=meal.lunch_food1 %}">{{ meal.lunch_food1 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 2: {% if meal.lunch_food2 %}<a href="{% url 'display_recipe' recipe_name=meal.lunch_food2 %}">{{ meal.lunch_food2 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 3: {% if meal.lunch_food3 %}<a href="{% url 'display_recipe' recipe_name=meal.lunch_food3 %}">{{ meal.lunch_food3 }}</a>{% else %}N/A{% endif %}</p>
+			<button id="like-button-{{ meal.lunch_id }}" onclick="likeMeal( {{meal.lunch_id}}, 'lunch' )">Like</button>
+			<button id="dislike-button-{{ meal.lunch_id }}" onclick="dislikeMeal( {{meal.lunch_id}}, 'lunch' )">Dislike</button>
+            <h3>Dinner</h3>
+            <p>Food 1: {% if meal.dinner_food1 %}<a href="{% url 'display_recipe' recipe_name=meal.dinner_food1 %}">{{ meal.dinner_food1 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 2: {% if meal.dinner_food2 %}<a href="{% url 'display_recipe' recipe_name=meal.dinner_food2 %}">{{ meal.dinner_food2 }}</a>{% else %}N/A{% endif %}</p>
+            <p>Food 3: {% if meal.dinner_food3 %}<a href="{% url 'display_recipe' recipe_name=meal.dinner_food3 %}">{{ meal.dinner_food3 }}</a>{% else %}N/A{% endif %}</p>
+			<button id="like-button-{{ meal.dinner_id }}" onclick="likeMeal({{meal.dinner_id}}, 'dinner' )">Like</button>
+			<button id="dislike-button-{{ meal.dinner_id }}" onclick="dislikeMeal( {{meal.dinner_id}}, 'dinner' )">Dislike</button>
+            <h3>Nutrients</h3>
+            <p>Combined Nutrients: {{ meal.nutrients }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No weekly meals found.</p>
+    {% endif %}
+</body>
+</html>
