@@ -50,7 +50,7 @@ class Profile(models.Model):
         (2.0, 'active_lifestyle'),
         (2.2, 'very_active_lifestyle')
     )
-    physical_activity = models.DecimalField(max_digits=6,decimal_places=1, choices=PHYSICAL_ACTIVITY_CHOICES)
+    physical_activity = models.FloatField(choices=PHYSICAL_ACTIVITY_CHOICES)
     RESTRICTIONS = (
         ('Egg', 'Egg'),
         ('Red Meat', 'Red Meat'), 

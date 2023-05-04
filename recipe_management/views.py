@@ -259,7 +259,7 @@ def update_meal_scores(user_profile):
     # calculate average feedback score for each meal
     meal_scores = {}
     for feedback in similar_breakfast_feedback:
-        meal = feedback.meal
+        meal = feedback
         if meal.id not in meal_scores:
             meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'breakfast'}
         if feedback.like:
@@ -270,7 +270,7 @@ def update_meal_scores(user_profile):
         meal_scores[meal.id]['type'] = 'breakfast'
 
     for feedback in similar_lunch_feedback:
-        meal = feedback.meal
+        meal = feedback
         if meal.id not in meal_scores:
             meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'lunch'}
         if feedback.like:
@@ -281,7 +281,7 @@ def update_meal_scores(user_profile):
         meal_scores[meal.id]['type'] = 'lunch'
 
     for feedback in similar_dinner_feedback:
-        meal = feedback.meal
+        meal = feedback
         if meal.id not in meal_scores:
             meal_scores[meal.id] = {'likes': 0, 'dislikes': 0, 'count': 0, 'type': 'dinner'}
         if feedback.like:
